@@ -1,4 +1,4 @@
-name: Update ViSingers Database
+name: Update ViSingers Data
 
 on:
   schedule:
