@@ -4,7 +4,6 @@ import Filter from "bad-words";
 import iso6391 from 'iso-639-1';
 import 'dotenv/config';
 
-import zlib from 'zlib';
 import { promisify } from 'util';
 
 
@@ -393,26 +392,15 @@ async function main() {
 
         console.log("Preparing files...");
 
-        const jsonFormatted = JSON.stringify(dbOutput, null, 2);
+        const jsonFormatted   = JSON.stringify(dbOutput, null, 2);
+        const jsonMinified    = JSON.stringify(dbOutput);
 
-        const jsonMinified = JSON.stringify(dbOutput);
-
-        const doBrotli = promisify(zlib.brotliCompress);
-        const compressedData = await doBrotli(jsonMinified, {
-            params: {
-                [zlib.constants.BROTLI_PARAM_MODE]: zlib.constants.BROTLI_MODE_TEXT,
-                [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
-            }
-        });
-
-        const fileBr = DB_FILENAME.replace('.json', '.min.json.br');
-
-        await fs.writeFile(DB_FILENAME, jsonFormatted);
-        await fs.writeFile(fileBr, compressedData);
+        await fs.writeFile(DB_FILENAME,     jsonFormatted);
+        await fs.writeFile(MINIFIED_FILENAME, jsonMinified);
 
         console.log(`\nSuccess! Saved 2 files:`);
-        console.log(`1. ${DB_FILENAME}       (Size: ${(jsonFormatted.length / 1024).toFixed(2)} KB)`);
-        console.log(`2. ${fileBr} (Size: ${(compressedData.length / 1024).toFixed(2)} KB)`);
+        console.log(`1. ${DB_FILENAME} (Size: ${(jsonFormatted.length / 1024).toFixed(2)} KB)`);
+        console.log(`2. ${MINIFIED_FILENAME} (Size: ${(jsonMinified.length / 1024).toFixed(2)} KB)`);
 
         console.log(`Users: ${finalUsers.length}, Singers: ${resultSingers.length}, Tags: ${finalTags.length}, Languages: ${languages.length}`);
 
