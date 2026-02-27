@@ -310,14 +310,14 @@ async function main() {
                     try {
                         const galleryContent = await octokit.rest.repos.getContent({ owner: repo.owner.login, repo: repo.name, path: galleryDir.name });
                         if (Array.isArray(galleryContent.data)) {
-                            imageUrls.push(...galleryContent.data.filter(f => f.name.endsWith(".png") || f.name.endsWith(".jpg")).map(f => `/${repo.default_branch}/${f.path}`));
+                            imageUrls.push(...galleryContent.data.filter(f => f.name.endsWith(".png") || f.name.endsWith(".jpg")).map(f => `${repo.default_branch}/${f.path}`));
                         }
                     } catch (e) { }
                 }
 
                 const singer = {
                     id: repo.id,
-                    avatarUrl: `/${repo.default_branch}/${imageFile.path}`,
+                    avatarUrl: `${repo.default_branch}/${imageFile.path}`,
                     repositoryName: repo.name,
                     name: descriptionSection.name,
                     siteUrl: repo.homepage,
