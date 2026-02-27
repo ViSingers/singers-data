@@ -8,6 +8,7 @@ import { promisify } from 'util';
 
 
 const DB_FILENAME = "data.json";
+const MINIFIED_FILENAME = "data.min.json";
 const APP_NAME = "ViSingersBot";
 
 const VOICEBANK_TYPES = [
