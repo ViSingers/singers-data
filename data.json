@@ -81,6 +81,69 @@
   ],
   "singers": [
     {
+      "id": 1084211717,
+      "avatarUrl": "main/для сайта.png",
+      "repositoryName": "Oktyabrina",
+      "name": "Oktyabrina",
+      "siteUrl": "https://www.youtube.com/@1D13D13/featured",
+      "details": {
+        "en": {
+          "description": ".--. --- -- --- --. .. - . --..-- - ..- - / - .- -.- / - . -- -. --- .-.-.- .-.-.- .-.-.-",
+          "generalInfo": [
+            "Gender: Female",
+            "Species: Android",
+            "Height: 165cm",
+            "Weight: 50kg",
+            "Age: 666days",
+            "Introduced: October 26, 1917",
+            "The main creators: D_13, CHR0MA/XHR0ME",
+            "Assistants: Netriko"
+          ],
+          "termsOfUse": [
+            "R-18 Content Allowed: Yes",
+            "Commercial Use of Voicebank Allowed: Yes",
+            "Commercial Use of Character Allowed: Yes"
+          ]
+        }
+      },
+      "creatorId": 125503432,
+      "updatedAt": "2026-03-04T16:59:12.000Z",
+      "createdAt": "2025-10-27T11:29:57Z",
+      "stars": 1,
+      "voicebanks": [
+        {
+          "type": "diffsinger",
+          "languages": [
+            "en",
+            "ko",
+            "pt",
+            "ru",
+            "zh"
+          ],
+          "sampleUrls": [
+            "Diffsinger/normal.mp3",
+            "Diffsinger/open.mp3",
+            "Diffsinger/whisper.mp3"
+          ],
+          "url": "Diffsinger/Oktyabrina_DS_v1.0.zip",
+          "name": "Oktyabrina Voicebank",
+          "description": {
+            "en": "Diffsinger v1.0"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "robot"
+        },
+        {
+          "name": "feminine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": []
+    },
+    {
       "id": 1142793038,
       "avatarUrl": "main/teto.bmp",
       "repositoryName": "teto",
@@ -216,69 +279,6 @@
         "main/gallery/2.png",
         "main/gallery/3.png"
       ]
-    },
-    {
-      "id": 1084211717,
-      "avatarUrl": "main/o.jpg",
-      "repositoryName": "Oktyabrina",
-      "name": "Oktyabrina",
-      "siteUrl": "https://www.youtube.com/@1D13D13/featured",
-      "details": {
-        "en": {
-          "description": ".--. --- -- --- --. .. - . --..-- - ..- - / - .- -.- / - . -- -. --- .-.-.- .-.-.- .-.-.-",
-          "generalInfo": [
-            "Gender: Female",
-            "Species: Android",
-            "Height: 165cm",
-            "Weight: 50kg",
-            "Age: 666days",
-            "Introduced: October 26, 1917",
-            "The main creators: D_13, CHR0MA/XHR0ME",
-            "Assistants: Netriko"
-          ],
-          "termsOfUse": [
-            "R-18 Content Allowed: Yes",
-            "Commercial Use of Voicebank Allowed: Yes",
-            "Commercial Use of Character Allowed: Yes"
-          ]
-        }
-      },
-      "creatorId": 125503432,
-      "updatedAt": "2025-10-27T15:43:54.000Z",
-      "createdAt": "2025-10-27T11:29:57Z",
-      "stars": 1,
-      "voicebanks": [
-        {
-          "type": "diffsinger",
-          "languages": [
-            "en",
-            "ko",
-            "pt",
-            "ru",
-            "zh"
-          ],
-          "sampleUrls": [
-            "Diffsinger/normal.mp3",
-            "Diffsinger/open.mp3",
-            "Diffsinger/whisper.mp3"
-          ],
-          "url": "Diffsinger/Oktyabrina_DS_v1.0.zip",
-          "name": "Oktyabrina Voicebank",
-          "description": {
-            "en": "Diffsinger v1.0"
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "robot"
-        },
-        {
-          "name": "feminine-voice"
-        }
-      ],
-      "videoUrls": [],
-      "imageUrls": []
     },
     {
       "id": 863240633,
