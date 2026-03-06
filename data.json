@@ -82,7 +82,7 @@
   "singers": [
     {
       "id": 1084211717,
-      "avatarUrl": "main/для сайта.png",
+      "avatarUrl": "main/image.png",
       "repositoryName": "Oktyabrina",
       "name": "Oktyabrina",
       "siteUrl": "https://www.youtube.com/@1D13D13/featured",
@@ -107,7 +107,7 @@
         }
       },
       "creatorId": 125503432,
-      "updatedAt": "2026-03-04T16:59:12.000Z",
+      "updatedAt": "2026-03-06T09:54:32.000Z",
       "createdAt": "2025-10-27T11:29:57Z",
       "stars": 1,
       "voicebanks": [
