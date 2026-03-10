@@ -441,147 +441,6 @@
       ]
     },
     {
-      "id": 1040368257,
-      "avatarUrl": "main/image.png",
-      "repositoryName": "rouh_izoka",
-      "name": "Rouh Izoka",
-      "siteUrl": "https://sites.google.com/view/team-cipstik/vocalists/rouhizoka",
-      "details": {
-        "en": {
-          "description": "Free virtual singer voicebank from Team Cipstik, currently only compatible with UTAU",
-          "generalInfo": [
-            "Gender: Female",
-            "Height: 144cm",
-            "Age: 10",
-            "Birthday: August 10th"
-          ],
-          "termsOfUse": [
-            "R-18 Content Allowed: Absolutely not.",
-            "Do these terms apply to derivative characters/voices: Unofficial derivitaves are not allowed."
-          ]
-        }
-      },
-      "creatorId": 143021992,
-      "updatedAt": "2025-08-18T22:10:01.000Z",
-      "createdAt": "2025-08-18T21:46:54Z",
-      "stars": 0,
-      "voicebanks": [
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "white_rose_v1.0/utaudemo_white_rose.wav"
-          ],
-          "url": "white_rose_v1.0/Rouh.Izoka.WHITE.ROSE.zip",
-          "name": "UTAU - WHITE ROSE -",
-          "description": {
-            "en": "CV UTAU voicebank released April 2nd, 2025"
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "feminine-voice"
-        },
-        {
-          "name": "humanoid"
-        }
-      ],
-      "videoUrls": [
-        "xmtyfBwc8E4",
-        "MQMTnZrF8P4"
-      ],
-      "imageUrls": [
-        "main/gallery/whiterose.png"
-      ]
-    },
-    {
-      "id": 1009884947,
-      "avatarUrl": "main/image.png",
-      "repositoryName": "Kyren_Izoka",
-      "name": "Kyren Izoka",
-      "siteUrl": "https://sites.google.com/view/team-cipstik/vocalists/kyrenizoka",
-      "details": {
-        "en": {
-          "description": "Free virtual singer voicebank from Team Cipstik, currently only compatible with UTAU",
-          "generalInfo": [
-            "Gender: Masculine Presenting (He/They)",
-            "Height: 153cm",
-            "Age: 21",
-            "Birthday: August 22nd"
-          ],
-          "termsOfUse": [
-            "R-18 Content Allowed: No",
-            "Commercial Use of Voicebank Allowed: Permission Required",
-            "Commercial Use of Character Allowed: Permission Required",
-            "Do these terms apply to derivative characters/voices: Unofficial derivatives are not allowed."
-          ]
-        }
-      },
-      "creatorId": 143021992,
-      "updatedAt": "2025-06-28T03:42:21.000Z",
-      "createdAt": "2025-06-27T22:22:00Z",
-      "stars": 0,
-      "voicebanks": [
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "rebound_v1.0/utaudemo_low.wav",
-            "rebound_v1.0/utaudemo_normal.wav",
-            "rebound_v1.0/utaudemo_tone.wav",
-            "rebound_v1.0/utaudemo_wilt.wav"
-          ],
-          "url": "rebound_v1.0/Kyren_Izoka_REBOUND.zip",
-          "name": "UTAU - REBOUND -",
-          "description": {
-            "en": "CVVC UTAU voicebank recorded on September 21st 2023, released Sebtember 19th 2024."
-          }
-        },
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "muse_v0.5b/utaudemo_beta.wav",
-            "muse_v0.5b/utaudemo_candy.wav",
-            "muse_v0.5b/utaudemo_normal.wav",
-            "muse_v0.5b/utaudemo_tense.wav",
-            "muse_v0.5b/utaudemo_wilt.wav"
-          ],
-          "url": "muse_v0.5b/Kyren.Izoka.MUSE.zip",
-          "name": "UTAU - MUSE -",
-          "description": {
-            "en": "Unfinished and cancelled CVVC UTAU voicebank. This voicebank will not be recieving updates."
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "androgenous-voice"
-        },
-        {
-          "name": "humanoid"
-        }
-      ],
-      "videoUrls": [
-        "eoWDAg84yZM",
-        "FZ5xWIZQtNk",
-        "GwZLH_23O2I",
-        "mmwo21muXck"
-      ],
-      "imageUrls": [
-        "main/gallery/MUSE OG concept.png",
-        "main/gallery/MUSE.png",
-        "main/gallery/REBOUND.png"
-      ]
-    },
-    {
       "id": 971356574,
       "avatarUrl": "main/image.png",
       "repositoryName": "NITARI",
@@ -1040,6 +899,147 @@
         "TfMiyqJBQeA"
       ],
       "imageUrls": []
+    },
+    {
+      "id": 1040368257,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "rouh_izoka",
+      "name": "Rouh Izoka",
+      "siteUrl": "https://sites.google.com/view/team-cipstik/vocalists/rouhizoka",
+      "details": {
+        "en": {
+          "description": "Free virtual singer voicebank from Team Cipstik, currently only compatible with UTAU",
+          "generalInfo": [
+            "Gender: Female",
+            "Height: 144cm",
+            "Age: 10",
+            "Birthday: August 10th"
+          ],
+          "termsOfUse": [
+            "R-18 Content Allowed: Absolutely not.",
+            "Do these terms apply to derivative characters/voices: Unofficial derivitaves are not allowed."
+          ]
+        }
+      },
+      "creatorId": 143021992,
+      "updatedAt": "2025-08-18T22:10:01.000Z",
+      "createdAt": "2025-08-18T21:46:54Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "white_rose_v1.0/utaudemo_white_rose.wav"
+          ],
+          "url": "white_rose_v1.0/Rouh.Izoka.WHITE.ROSE.zip",
+          "name": "UTAU - WHITE ROSE -",
+          "description": {
+            "en": "CV UTAU voicebank released April 2nd, 2025"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "humanoid"
+        }
+      ],
+      "videoUrls": [
+        "xmtyfBwc8E4",
+        "MQMTnZrF8P4"
+      ],
+      "imageUrls": [
+        "main/gallery/whiterose.png"
+      ]
+    },
+    {
+      "id": 1009884947,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Kyren_Izoka",
+      "name": "Kyren Izoka",
+      "siteUrl": "https://sites.google.com/view/team-cipstik/vocalists/kyrenizoka",
+      "details": {
+        "en": {
+          "description": "Free virtual singer voicebank from Team Cipstik, currently only compatible with UTAU",
+          "generalInfo": [
+            "Gender: Masculine Presenting (He/They)",
+            "Height: 153cm",
+            "Age: 21",
+            "Birthday: August 22nd"
+          ],
+          "termsOfUse": [
+            "R-18 Content Allowed: No",
+            "Commercial Use of Voicebank Allowed: Permission Required",
+            "Commercial Use of Character Allowed: Permission Required",
+            "Do these terms apply to derivative characters/voices: Unofficial derivatives are not allowed."
+          ]
+        }
+      },
+      "creatorId": 143021992,
+      "updatedAt": "2025-06-28T03:42:21.000Z",
+      "createdAt": "2025-06-27T22:22:00Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "rebound_v1.0/utaudemo_low.wav",
+            "rebound_v1.0/utaudemo_normal.wav",
+            "rebound_v1.0/utaudemo_tone.wav",
+            "rebound_v1.0/utaudemo_wilt.wav"
+          ],
+          "url": "rebound_v1.0/Kyren_Izoka_REBOUND.zip",
+          "name": "UTAU - REBOUND -",
+          "description": {
+            "en": "CVVC UTAU voicebank recorded on September 21st 2023, released Sebtember 19th 2024."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "muse_v0.5b/utaudemo_beta.wav",
+            "muse_v0.5b/utaudemo_candy.wav",
+            "muse_v0.5b/utaudemo_normal.wav",
+            "muse_v0.5b/utaudemo_tense.wav",
+            "muse_v0.5b/utaudemo_wilt.wav"
+          ],
+          "url": "muse_v0.5b/Kyren.Izoka.MUSE.zip",
+          "name": "UTAU - MUSE -",
+          "description": {
+            "en": "Unfinished and cancelled CVVC UTAU voicebank. This voicebank will not be recieving updates."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "androgenous-voice"
+        },
+        {
+          "name": "humanoid"
+        }
+      ],
+      "videoUrls": [
+        "eoWDAg84yZM",
+        "FZ5xWIZQtNk",
+        "GwZLH_23O2I",
+        "mmwo21muXck"
+      ],
+      "imageUrls": [
+        "main/gallery/MUSE OG concept.png",
+        "main/gallery/MUSE.png",
+        "main/gallery/REBOUND.png"
+      ]
     }
   ],
   "tags": [
