@@ -355,6 +355,7 @@ async function main() {
             }
 
             const lastRepoInPage = repos[repos.length - 1];
+            const lastRepoDateTs = new Date(lastRepoInPage.updated_at).getTime();
             console.log(`Last repo on page updated at: ${lastRepoInPage.updated_at}`);
             
             if (maxLocalTimestamp > 0 && lastRepoDateTs < maxLocalTimestamp) {
