@@ -11,7 +11,6 @@ const DB_FILENAME = "data.json";
 const MINIFIED_FILENAME = "data.min.json";
 const APP_NAME = "ViSingersBot";
 
-// Обновленный список типов
 const VOICEBANK_TYPES = [
     "utau",
     "paintvoice",
@@ -92,7 +91,6 @@ function getLanguagesList() {
         .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-// ИСПРАВЛЕНИЕ ЗДЕСЬ: Безопасное чтение файла с дефолтными пустыми массивами
 async function loadExistingDatabase() {
     try {
         const data = await fs.readFile(DB_FILENAME, 'utf-8');
