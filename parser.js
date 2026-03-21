@@ -11,6 +11,7 @@ const DB_FILENAME = "data.json";
 const MINIFIED_FILENAME = "data.min.json";
 const APP_NAME = "ViSingersBot";
 
+// Обновленный список типов
 const VOICEBANK_TYPES = [
     "utau",
     "paintvoice",
@@ -91,12 +92,19 @@ function getLanguagesList() {
         .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+// ИСПРАВЛЕНИЕ ЗДЕСЬ: Безопасное чтение файла с дефолтными пустыми массивами
 async function loadExistingDatabase() {
     try {
         const data = await fs.readFile(DB_FILENAME, 'utf-8');
-        return JSON.parse(data);
+        const parsed = JSON.parse(data);
+        return {
+            users: parsed.users || [],
+            singers: parsed.singers || [],
+            tags: parsed.tags || [],
+            languages: parsed.languages || []
+        };
     } catch (error) {
-        console.log("No existing database found, starting fresh.");
+        console.log("No existing database found or invalid JSON, starting fresh.");
         return { users: [], singers: [], tags: [], languages: [] };
     }
 }
@@ -234,7 +242,6 @@ async function main() {
                 if (!readmeFile || !imageFile || !readmeFile.text || readmeFile.size >= 2000000 || imageFile.size >= 20000000) continue;
 
                 const censoredReadme = censorText(readmeFile.text);
-                
                 const readmeRows = censoredReadme.split(/\r?\n/).filter(row => row.trim() !== "");
                 
                 const sections = getSections(readmeRows);
@@ -263,7 +270,6 @@ async function main() {
                     if (!vbLanguages.length || !type) continue;
 
                     let matchedReleases = releases.filter(r => r.name.startsWith(vbSection.name));
-                    
                     matchedReleases.sort((a, b) => {
                         const aDigits = a.name.replace(vbSection.name, "").replace(/\D/g, "");
                         const bDigits = b.name.replace(vbSection.name, "").replace(/\D/g, "");
@@ -379,7 +385,7 @@ async function main() {
 
         }
 
-        if (existingDb.singers) {
+        if (existingDb.singers.length > 0) {
             let addedCount = 0;
             for (const oldSinger of existingDb.singers) {
                 if (!processedRepoIds.has(oldSinger.id)) {
