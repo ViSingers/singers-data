@@ -6,7 +6,6 @@ import 'dotenv/config';
 
 import { promisify } from 'util';
 
-
 const DB_FILENAME = "data.json";
 const MINIFIED_FILENAME = "data.min.json";
 const APP_NAME = "ViSingersBot";
@@ -23,29 +22,9 @@ const VOICEBANK_TYPES = [
     "nnsvs"
 ];
 
-const YOUTUBE_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:(?:youtube\.com\/watch\?v=)|(?:youtu\.be\/))([a-zA-Z0-9_-]{11})/g;
+const YOUTUBE_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:(?:\.be\/))([a-zA-Z0-9_-]{11})/g;
 
-const GET_REPO_QUERY = `
-query($owner: String!, $name: String!) {
-  repository(owner: $owner, name: $name) {
-    object(expression: "HEAD:") {
-      ... on Tree {
-        entries {
-          name
-          type
-          path
-          object {
-            ... on Blob {
-              text
-              byteSize
-            }
-          }
-        }
-      }
-    }
-  }
-}
-`;
+const GET_REPO_QUERY = `query($owner: String!, $name: String!) { repository(owner: $owner, name: $name) { object(expression: "HEAD:") { ... on Tree { entries { name type path object { ... on Blob { text byteSize } } } } } } }`;
 
 const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN,
@@ -187,7 +166,7 @@ async function main() {
                 console.log(`Parsing ${repo.full_name}...`);
 
                 const githubUserId = repo.owner.id;
-                if (!processedUserIds.has(githubUserId)) {
+                if (!processedUserIds.has(githubUserId) || !usersMap.has(githubUserId)) {
                     let userObj = usersMap.get(githubUserId);
                     let fullName = repo.owner.login;
 
@@ -245,6 +224,12 @@ async function main() {
                 const sections = getSections(readmeRows);
                 const descriptionSection = sections[0];
                 if (!descriptionSection) continue;
+
+                let singerName = descriptionSection.name;
+                const lowerDescName = singerName ? singerName.toLowerCase() : "";
+                if (lowerDescName.includes("info") || lowerDescName.includes("desc")) {
+                    singerName = repo.name.replace(/_/g, " ");
+                }
 
                 const generalInfoSection = sections[1];
                 const videosSection = sections.find(s => s.name.toLowerCase() === "videos");
@@ -310,7 +295,7 @@ async function main() {
                         const isLang = languages.some(l => l.name === t || l.fullName === t);
                         const isType = VOICEBANK_TYPES.some(typ => typ === t);
                         const isUser = t === currentUser.login.toLowerCase();
-                        const isDescName = t === descriptionSection.name.toLowerCase() || descriptionSection.name.toLowerCase().split(" ").includes(t);
+                        const isDescName = t === singerName.toLowerCase() || singerName.toLowerCase().split(" ").includes(t);
                         return !isLang && !isType && !isUser && !isDescName;
                     });
 
@@ -337,7 +322,7 @@ async function main() {
                     id: repo.id,
                     avatarUrl: `${repo.default_branch}/${imageFile.path}`,
                     repositoryName: repo.name,
-                    name: descriptionSection.name,
+                    name: singerName,
                     siteUrl: repo.homepage,
                     details: { "en": { description, generalInfo, termsOfUse } },
                     creatorId: currentUser.id,
@@ -370,17 +355,14 @@ async function main() {
             }
 
             const lastRepoInPage = repos[repos.length - 1];
-            const lastRepoDateTs = new Date(lastRepoInPage.updated_at).getTime();
-
             console.log(`Last repo on page updated at: ${lastRepoInPage.updated_at}`);
-
+            
             if (maxLocalTimestamp > 0 && lastRepoDateTs < maxLocalTimestamp) {
                 console.log(`Reached data older than local DB (${new Date(maxLocalTimestamp).toISOString()}). Stopping pagination.`);
                 keepFetching = false;
             } else {
                 page++;
             }
-
         }
 
         if (existingDb.singers.length > 0) {
@@ -411,10 +393,10 @@ async function main() {
 
         console.log("Preparing files...");
 
-        const jsonFormatted   = JSON.stringify(dbOutput, null, 2);
-        const jsonMinified    = JSON.stringify(dbOutput);
+        const jsonFormatted = JSON.stringify(dbOutput, null, 2);
+        const jsonMinified = JSON.stringify(dbOutput);
 
-        await fs.writeFile(DB_FILENAME,     jsonFormatted);
+        await fs.writeFile(DB_FILENAME, jsonFormatted);
         await fs.writeFile(MINIFIED_FILENAME, jsonMinified);
 
         console.log(`\nSuccess! Saved 2 files:`);
@@ -426,6 +408,7 @@ async function main() {
     } catch (e) {
         console.error("Global Error:", e);
     }
+
 }
 
 main();
