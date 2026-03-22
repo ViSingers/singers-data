@@ -389,6 +389,7 @@ async function main() {
             users: finalUsers,
             singers: resultSingers,
             tags: finalTags,
+            voicebankTypes: VOICEBANK_TYPES,
             languages
         };
 
