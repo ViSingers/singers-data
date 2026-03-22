@@ -1033,6 +1033,17 @@
       "name": "rus"
     }
   ],
+  "voicebankTypes": [
+    "utau",
+    "paintvoice",
+    "diffsinger",
+    "rvc",
+    "freeloid",
+    "vocalsharp",
+    "niaoniao",
+    "deepvocal",
+    "nnsvs"
+  ],
   "languages": [
     {
       "name": "aa",
