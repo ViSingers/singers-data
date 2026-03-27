@@ -248,8 +248,10 @@ async function main() {
                     let parsedLanguages = langRow ? langRow.replace("- Languages:", "").split(",").map(l => l.trim().toLowerCase().replace("jp", "ja")) : [];
                     const typeRow = vbSection.content.find(row => row.trim().startsWith("- Type:"));
                     let parsedTypeStr = typeRow ? typeRow.replace("- Type:", "").trim().toLowerCase() : null;
-
+                    console.log("Parsed languages:", parsedLanguages);
+                    console.log("Parsed type:", parsedTypeStr);
                     const vbLanguages = languages.filter(l => parsedLanguages.includes(l.name) || parsedLanguages.includes(l.fullName)).map(l => l.name);
+                    console.log("Parsed vb languages:", vbLanguages);
                     const type = VOICEBANK_TYPES.find(t => t === parsedTypeStr);
 
                     if (!vbLanguages.length || !type) continue;
