@@ -19,7 +19,8 @@ const VOICEBANK_TYPES = [
     "vocalsharp",
     "niaoniao",
     "deepvocal",
-    "nnsvs"
+    "nnsvs",
+    "coeiroink"
 ];
 
 const YOUTUBE_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:(?:\.be\/))([a-zA-Z0-9_-]{11})/g;
