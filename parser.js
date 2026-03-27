@@ -138,6 +138,12 @@ async function main() {
             for (const repo of repos) {
                 if (repo.name.includes("template")) continue;
 
+                const knownUser = usersMap.get(repo.owner.id);
+                if (knownUser && knownUser.isBlocked) {
+                    console.log(`Skipping ${repo.full_name} (Creator is blocked)`);
+                    continue;
+                }
+                
                 processedRepoIds.add(repo.id);
 
                 const pushedDate = new Date(repo.pushed_at);
@@ -240,18 +246,13 @@ async function main() {
                 const voicebankSections = sections.slice(2).filter(s => !["groups", "videos", "terms of use"].includes(s.name.toLowerCase()));
                 const voicebanks = [];
                 const downloadUrlRegex = new RegExp(`^https://github\\.com/${repo.owner.login}/${repo.name}/releases/download/`, 'i');
-                console.log("sections");
-                console.log(voicebankSections);
                 for (const vbSection of voicebankSections) {
                     const vbDescription = vbSection.content.filter(row => !row.trim().startsWith("-")).join("\n").trim();
                     const langRow = vbSection.content.find(row => row.trim().startsWith("- Languages:"));
                     let parsedLanguages = langRow ? langRow.replace("- Languages:", "").split(",").map(l => l.trim().toLowerCase().replace("jp", "ja")) : [];
                     const typeRow = vbSection.content.find(row => row.trim().startsWith("- Type:"));
                     let parsedTypeStr = typeRow ? typeRow.replace("- Type:", "").trim().toLowerCase() : null;
-                    console.log("Parsed languages:", parsedLanguages);
-                    console.log("Parsed type:", parsedTypeStr);
                     const vbLanguages = languages.filter(l => parsedLanguages.includes(l.name) || parsedLanguages.includes(l.fullName)).map(l => l.name);
-                    console.log("Parsed vb languages:", vbLanguages);
                     const type = VOICEBANK_TYPES.find(t => t === parsedTypeStr);
 
                     if (!vbLanguages.length || !type) continue;
@@ -262,7 +263,6 @@ async function main() {
                         const bDigits = b.name.replace(vbSection.name, "").replace(/\D/g, "");
                         return aDigits.localeCompare(bDigits);
                     });
-                    console.log(releases.length);
                     let lastRelease = matchedReleases[0];
                     if (!lastRelease && voicebankSections.length === 1) {
                         lastRelease = [...releases].sort((a, b) => {
@@ -374,6 +374,12 @@ async function main() {
             let addedCount = 0;
             for (const oldSinger of existingDb.singers) {
                 if (!processedRepoIds.has(oldSinger.id)) {
+                    const creator = usersMap.get(oldSinger.creatorId);
+                    if (creator && creator.isBlocked) {
+                        console.log(`Removing existing singer "${oldSinger.name}" (Creator is blocked)`);
+                        continue;
+                    }
+                    
                     resultSingers.push(oldSinger);
 
                     if (oldSinger.tags) oldSinger.tags.forEach(t => allTagsSet.add(t.name));
