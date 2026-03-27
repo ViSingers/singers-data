@@ -245,7 +245,7 @@ async function main() {
                 for (const vbSection of voicebankSections) {
                     const vbDescription = vbSection.content.filter(row => !row.trim().startsWith("-")).join("\n").trim();
                     const langRow = vbSection.content.find(row => row.trim().startsWith("- Languages:"));
-                    let parsedLanguages = langRow ? langRow.replace("- Languages:", "").split(",").map(l => l.trim().toLowerCase()) : [];
+                    let parsedLanguages = langRow ? langRow.replace("- Languages:", "").split(",").map(l => l.trim().toLowerCase().replace("jp", "ja")) : [];
                     const typeRow = vbSection.content.find(row => row.trim().startsWith("- Type:"));
                     let parsedTypeStr = typeRow ? typeRow.replace("- Type:", "").trim().toLowerCase() : null;
 
