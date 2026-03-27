@@ -240,7 +240,8 @@ async function main() {
                 const voicebankSections = sections.slice(2).filter(s => !["groups", "videos", "terms of use"].includes(s.name.toLowerCase()));
                 const voicebanks = [];
                 const downloadUrlRegex = new RegExp(`^https://github\\.com/${repo.owner.login}/${repo.name}/releases/download/`, 'i');
-
+                console.log("sections");
+                console.log(voicebankSections);
                 for (const vbSection of voicebankSections) {
                     const vbDescription = vbSection.content.filter(row => !row.trim().startsWith("-")).join("\n").trim();
                     const langRow = vbSection.content.find(row => row.trim().startsWith("- Languages:"));
@@ -259,7 +260,7 @@ async function main() {
                         const bDigits = b.name.replace(vbSection.name, "").replace(/\D/g, "");
                         return aDigits.localeCompare(bDigits);
                     });
-
+                    console.log(releases.length);
                     let lastRelease = matchedReleases[0];
                     if (!lastRelease && voicebankSections.length === 1) {
                         lastRelease = [...releases].sort((a, b) => {
