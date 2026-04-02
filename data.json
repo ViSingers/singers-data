@@ -75,6 +75,62 @@
   ],
   "singers": [
     {
+      "id": 1199599611,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Hatsune-Miku",
+      "name": "Hatsune Miku",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Hatsune Miku (初音ミク) is a Japanese VOCALOID developed by Crypton Future Media and released in August 2007 for the VOCALOID2 engine. Voiced by Japanese actress Saki Fujita, she is the seventh VOCALOID ever created and the inaugural member of Crypton's Character Vocal Series.",
+          "generalInfo": [
+            "Gender: Female",
+            "Age: 16",
+            "Height: 158cm",
+            "Weight: 42kg"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No (Hatsune Miku is a copyrighted character and trademark of Crypton Future Media, Inc.)",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution of Voicebank Allowed: No",
+            "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
+            "Crediting Required: Yes (Please credit \"HHS_kt\" as the conversion author)"
+          ]
+        }
+      },
+      "creatorId": 129613118,
+      "updatedAt": "2026-04-02T18:31:02.000Z",
+      "createdAt": "2026-04-02T14:08:34Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "utau_v1.1/VCV_UTAU.mp3"
+          ],
+          "url": "utau_v1.1/Hatsune.Miku.VCV.zip",
+          "name": "VCV UTAU Voicebank",
+          "description": {
+            "en": "This is a VCV UTAU voicebank based on vocal renders from the original Hatsune Miku VOCALOID2 library. The voicebank features five pitches and includes extra phonemes, such as breath sounds."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        }
+      ],
+      "videoUrls": [
+        "FqWkh9rymQ8"
+      ],
+      "imageUrls": [
+        "main/gallery/Miku_V2.png"
+      ]
+    },
+    {
       "id": 1084211717,
       "avatarUrl": "main/image.png",
       "repositoryName": "Oktyabrina",
