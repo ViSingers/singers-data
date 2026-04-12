@@ -1,6 +1,11 @@
 {
   "users": [
     {
+      "id": 146136628,
+      "login": "Julia-Baranyuk",
+      "name": "Julia-Baranyuk"
+    },
+    {
       "id": 129613118,
       "login": "hhskt",
       "name": "HHS_kt"
@@ -16,11 +21,6 @@
       "name": "Eli Lab"
     },
     {
-      "id": 257396582,
-      "login": "themaincharaktr",
-      "name": "themaincharaktr"
-    },
-    {
       "id": 233575664,
       "login": "RyanFoxYT332",
       "name": "RyanFoxYT332"
@@ -29,11 +29,6 @@
       "id": 91783530,
       "login": "WolfGuy001",
       "name": "WolfGuy001"
-    },
-    {
-      "id": 207936409,
-      "login": "codebro54",
-      "name": "codebro54"
     },
     {
       "id": 98113005,
@@ -61,9 +56,22 @@
       "name": "Alejo520"
     },
     {
-      "id": 146136628,
-      "login": "Julia-Baranyuk",
-      "name": "Julia-Baranyuk"
+      "id": 182306565,
+      "login": "ViSingers",
+      "name": "ViSingers"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1208642200,
+      "repo": "ViSingers/visingers-creators",
+      "name": "ViSingers Creators",
+      "createdAt": "2026-04-12T15:03:40Z",
+      "updatedAt": "2026-04-12T18:57:03.000Z",
+      "memberUrls": [
+        "https://github.com/hhskt/awata_weak"
+      ],
+      "participants": []
     }
   ],
   "singers": [
@@ -117,7 +125,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 863240633,
@@ -370,7 +379,8 @@
         "main/gallery/originalTW_ver_by_Сасюля.png",
         "main/gallery/original_ver.png",
         "main/gallery/original_ver_by_Сасюля.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 1084211717,
@@ -435,7 +445,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 1207196199,
@@ -482,7 +493,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 1199599611,
@@ -538,7 +550,8 @@
       ],
       "imageUrls": [
         "main/gallery/Miku_V2.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 1066071758,
@@ -659,7 +672,8 @@
         "main/gallery/1.png",
         "main/gallery/2.png",
         "main/gallery/3.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 971356574,
@@ -725,7 +739,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 875265696,
@@ -852,7 +867,8 @@
         "main/gallery/AI Song.png",
         "main/gallery/AI Talk.png",
         "main/gallery/standing.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 611531368,
@@ -926,7 +942,8 @@
         "5g9Zjj8rcLU",
         "w_V1nXRunXY"
       ],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 874191114,
@@ -967,7 +984,8 @@
       ],
       "tags": [],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 871310322,
@@ -1009,7 +1027,8 @@
       ],
       "tags": [],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 868330308,
@@ -1068,12 +1087,19 @@
       "videoUrls": [
         "TfMiyqJBQeA"
       ],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     }
   ],
   "tags": [
     {
+      "name": "sus"
+    },
+    {
       "name": "feminine-voice"
+    },
+    {
+      "name": "takismana"
     },
     {
       "name": "robot"
@@ -1092,12 +1118,6 @@
     },
     {
       "name": "humanoid"
-    },
-    {
-      "name": "sus"
-    },
-    {
-      "name": "takismana"
     }
   ],
   "voicebankTypes": [
