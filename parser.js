@@ -79,7 +79,7 @@ function extractGithubUrls(rows) {
     while ((match = regex.exec(text)) !== null) {
         let owner = match[1].toLowerCase();
         let repoName = match[2].toLowerCase().replace(/\.git$/, '');
-        urls.add(`https://github.com/${owner}/${repoName}`);
+        urls.add(`${owner}/${repoName}`);
     }
     return Array.from(urls);
 }
@@ -270,6 +270,7 @@ async function main() {
                         id: repo.id,
                         repo: repo.full_name,
                         name: groupName,
+                        description: descriptionSection.content.filter(row => !row.trim().startsWith("!") && !row.trim().startsWith("[")).join("\n").trim(),
                         createdAt: repo.created_at,
                         updatedAt: effectiveDate.toISOString(),
                         memberUrls: extractGithubUrls(membersSection.content),
@@ -449,8 +450,8 @@ async function main() {
             let addedGroups = 0;
             for (const oldGroup of existingDb.groups) {
                 if (!processedRepoIds.has(oldGroup.id)) {
-                    const ownerLogin = oldGroup.repo.split('/')[0].toLowerCase();
-                    const repoFullName = oldGroup.repo.toLowerCase();
+                    const ownerLogin = oldGroup.repositoryPath.split('/')[0].toLowerCase();
+                    const repoFullName = oldGroup.repositoryPath.toLowerCase();
 
                     if (ownerLogin && blockedUsers.has(ownerLogin)) continue;
                     if (ownerLogin && blockedRepos.has(repoFullName)) continue;
@@ -466,7 +467,7 @@ async function main() {
 
         const groupsByName = new Map();
         for (const g of rawGroups) {
-            const key = g.name.toLowerCase();
+            const key = g.repositoryName.toLowerCase();
             if (!groupsByName.has(key)) {
                 groupsByName.set(key, g);
             } else {
@@ -483,12 +484,12 @@ async function main() {
             singer.groups = [];
             
             const creator = usersMap.get(singer.creatorId);
-            const fallbackUrl = creator ? `https://github.com/${creator.login}/${singer.repositoryName}`.toLowerCase() : "";
+            const fallbackUrl = creator ? `${creator.login}/${singer.repositoryName}`.toLowerCase() : "";
             const singerRepoUrl = singer.repoUrl || fallbackUrl;
             const declaredUrls = singer.declaredGroupUrls || [];
 
             for (const group of finalGroups) {
-                const groupRepoUrl = `https://github.com/${group.repo.toLowerCase()}`;
+                const groupRepoUrl = `${group.repositoryPath.toLowerCase()}`;
 
                 const singerMentionsGroup = declaredUrls.includes(groupRepoUrl);
                 const groupMentionsSinger = group.memberUrls?.includes(singerRepoUrl);
@@ -507,9 +508,6 @@ async function main() {
                     });
                 }
             }
-            
-            delete singer.repoUrl;
-            delete singer.declaredGroupUrls;
         }
 
         const finalUsers = Array.from(usersMap.values());
