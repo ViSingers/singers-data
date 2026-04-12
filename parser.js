@@ -301,7 +301,7 @@ async function main() {
 
                 let singerName = descriptionSection.name;
                 const lowerDescName = singerName ? singerName.toLowerCase() : "";
-                if (lowerDescName.includes("info") || lowerDescName.includes("desc")) {
+                if (lowerDescName.includes("info") || lowerDescName.includes("desc") || lowerDescName.includes("your singer")) {
                     singerName = repo.name.replace(/_/g, " ");
                 }
 
