@@ -117,9 +117,9 @@
         }
       },
       "creatorId": 129613118,
-      "updatedAt": "2026-04-12T13:29:35.000Z",
+      "updatedAt": "2026-04-12T14:29:25.000Z",
       "createdAt": "2024-09-26T00:48:01Z",
-      "stars": 2,
+      "stars": 3,
       "voicebanks": [
         {
           "type": "diffsinger",
@@ -142,6 +142,22 @@
           "description": {
             "en": "Diffsinger v2",
             "ru": "Diffsinger v2"
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "jp_vcv_utau_v1.2/1.Original.wav",
+            "jp_vcv_utau_v1.2/2.Soft.wav",
+            "jp_vcv_utau_v1.2/3.Power.wav"
+          ],
+          "url": "jp_vcv_utau_v1.2/Awata_Weak_VCV_v1.2.zip",
+          "name": "Japanese VCV UTAU",
+          "description": {
+            "en": "4 pitches for each voice colors. Includes additional inhale/exhale phonemes, three types of exhalations after a vowel, glottal stop and vocal fry, samples with the consonant 'L'"
           }
         },
         {
@@ -217,23 +233,6 @@
           "description": {
             "en": "A simple singing voicebank for Chinese (Pinyin)",
             "ru": "Простой войсбанк на пиньине для китайского языка"
-          }
-        },
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "jp_vcv_utau_v1.1/Normal.mp3",
-            "jp_vcv_utau_v1.1/Power.mp3",
-            "jp_vcv_utau_v1.1/Soft.mp3"
-          ],
-          "url": "jp_vcv_utau_v1.1/Awata_Weak_VCV_Jap_v1.1.zip",
-          "name": "Japanese (VCV) UTAU Voicebank",
-          "description": {
-            "en": "4 pitches for each voice colors. Includes additional inhale/exhale phonemes, three types of exhalations after a vowel, glottal stop and vocal fry, samples with the consonant 'L'",
-            "ru": "4 питча для каждого оттенка голоса. Имеются дополнительные фонемы: вдохи, выдохи, три типа выдохов после гласных, гортанные смычки, вокалфрай, слоги с согласной 'Л'"
           }
         },
         {
