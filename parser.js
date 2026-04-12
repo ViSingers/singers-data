@@ -333,7 +333,7 @@ async function main() {
                         const isLang = languages.some(l => l.name === tag || l.fullName === tag);
                         const isType = VOICEBANK_TYPES.some(typ => typ === tag);
                         const isUser = tag.includes(currentUser.login.toLowerCase().replace("-", "").replace(" ", "")) || tag.includes(currentUser.login.toLowerCase().replace("-", "").replace(" ", ""));
-                        const isDescName = singerName ? singerName.toLowerCase().split(" ").any(singerNamePart => tag.includes(singerNamePart)) : false;
+                        const isDescName = singerName ? singerName.toLowerCase().split(" ").some(singerNamePart => tag.includes(singerNamePart)) : false;
                         return !isLang && !isType && !isUser && !isDescName;
                     });
 
