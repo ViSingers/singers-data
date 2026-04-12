@@ -54,9 +54,26 @@
       "id": 92231866,
       "login": "Alejo5205",
       "name": "Alejo520"
+    },
+    {
+      "id": 182306565,
+      "login": "ViSingers",
+      "name": "ViSingers"
     }
   ],
-  "groups": [],
+  "groups": [
+    {
+      "id": 1208642200,
+      "repo": "ViSingers/visingers-creators",
+      "name": "ViSingers Creators",
+      "createdAt": "2026-04-12T15:03:40Z",
+      "updatedAt": "2026-04-12T18:57:03.000Z",
+      "memberUrls": [
+        "https://github.com/hhskt/awata_weak"
+      ],
+      "participants": []
+    }
+  ],
   "singers": [
     {
       "id": 1208753553,
