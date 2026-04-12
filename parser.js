@@ -526,8 +526,8 @@ async function main() {
                     });
                 }
 
-                delete group.memberUrls;
-                delete singer.declaredGroupUrls;
+                // delete group.memberUrls;
+                // delete singer.declaredGroupUrls;
             }
         }
 
