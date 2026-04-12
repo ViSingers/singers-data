@@ -92,8 +92,6 @@
           "generalInfo": [
             "Gender: Female",
             "Species: Robot",
-            "Height: 150/165/180cm",
-            "Weight: 30/45/60kg",
             "Introduced: September 26, 2023"
           ],
           "termsOfUse": [
@@ -106,8 +104,6 @@
           "generalInfo": [
             "Пол: Женский",
             "Вид: Робот",
-            "Рост: 150/165/180 см",
-            "Вес: 30/45/60 кг",
             "Релиз: 26 сентября 2023 года"
           ],
           "termsOfUse": [
@@ -117,7 +113,7 @@
         }
       },
       "creatorId": 129613118,
-      "updatedAt": "2026-04-12T15:16:10.000Z",
+      "updatedAt": "2026-04-12T15:27:18.000Z",
       "createdAt": "2024-09-26T00:48:01Z",
       "stars": 3,
       "voicebanks": [
@@ -159,6 +155,23 @@
           "description": {
             "en": "4 pitches for each voice colors. Includes additional inhale/exhale phonemes, three types of exhalations after a vowel, glottal stop and vocal fry, samples with the consonant 'L'",
             "ru": "4 питча для каждого оттенка голоса. Имеются дополнительные фонемы: вдохи, выдохи, три типа выдохов после гласных, гортанные смычки, вокалфрай, слоги с согласной 'Л'"
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ru"
+          ],
+          "sampleUrls": [
+            "ru_cvc_utau_v1.1/1_Original.wav",
+            "ru_cvc_utau_v1.1/2_Soft.wav",
+            "ru_cvc_utau_v1.1/3_Power.wav"
+          ],
+          "url": "ru_cvc_utau_v1.1/Awata_Weak_CVC_Rus_v1.1.zip",
+          "name": "Russian CVC UTAU",
+          "description": {
+            "en": "4 pitches for each voice colors. Includes additional inhale/exhale phonemes, three types of exhalations after a vowel, glottal stop and vocal fry",
+            "ru": "4 питча для каждого оттенка голоса. Имеются дополнительные фонемы: вдохи, выдохи, три типа выдохов после гласных, гортанные смычки, вокалфрай"
           }
         },
         {
@@ -239,23 +252,6 @@
         {
           "type": "utau",
           "languages": [
-            "ru"
-          ],
-          "sampleUrls": [
-            "ru_cvc_utau_v1.0/Normal.mp3",
-            "ru_cvc_utau_v1.0/Power.mp3",
-            "ru_cvc_utau_v1.0/Soft.mp3"
-          ],
-          "url": "ru_cvc_utau_v1.0/Awata_Weak_CVC_Rus_v1.0.zip",
-          "name": "Russian (CVC) UTAU Voicebank",
-          "description": {
-            "en": "4 pitches for each voice colors. Includes additional inhale/exhale phonemes, three types of exhalations after a vowel, glottal stop and vocal fry",
-            "ru": "4 питча для каждого оттенка голоса. Имеются дополнительные фонемы: вдохи, выдохи, три типа выдохов после гласных, гортанные смычки, вокалфрай"
-          }
-        },
-        {
-          "type": "utau",
-          "languages": [
             "zh"
           ],
           "sampleUrls": [
@@ -315,7 +311,9 @@
       "videoUrls": [
         "BWLT9DMjEuo",
         "hWGzs72-5vY",
-        "z91aSvDaNV8"
+        "z91aSvDaNV8",
+        "PaZMY1vztes",
+        "dvzYw1ZCm9Y"
       ],
       "imageUrls": [
         "main/gallery/birthday1.png",
