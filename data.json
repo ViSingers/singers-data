@@ -66,6 +66,7 @@
       "name": "Julia-Baranyuk"
     }
   ],
+  "groups": [],
   "singers": [
     {
       "id": 1208753553,
@@ -117,7 +118,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 863240633,
@@ -370,7 +372,8 @@
         "main/gallery/originalTW_ver_by_Сасюля.png",
         "main/gallery/original_ver.png",
         "main/gallery/original_ver_by_Сасюля.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 1084211717,
@@ -435,7 +438,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 1207196199,
@@ -482,7 +486,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 1199599611,
@@ -538,7 +543,8 @@
       ],
       "imageUrls": [
         "main/gallery/Miku_V2.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 1066071758,
@@ -659,7 +665,8 @@
         "main/gallery/1.png",
         "main/gallery/2.png",
         "main/gallery/3.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 971356574,
@@ -725,7 +732,8 @@
         }
       ],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 875265696,
@@ -852,7 +860,8 @@
         "main/gallery/AI Song.png",
         "main/gallery/AI Talk.png",
         "main/gallery/standing.png"
-      ]
+      ],
+      "groups": []
     },
     {
       "id": 611531368,
@@ -926,7 +935,8 @@
         "5g9Zjj8rcLU",
         "w_V1nXRunXY"
       ],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 874191114,
@@ -967,7 +977,8 @@
       ],
       "tags": [],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 871310322,
@@ -1009,7 +1020,8 @@
       ],
       "tags": [],
       "videoUrls": [],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     },
     {
       "id": 868330308,
@@ -1068,7 +1080,8 @@
       "videoUrls": [
         "TfMiyqJBQeA"
       ],
-      "imageUrls": []
+      "imageUrls": [],
+      "groups": []
     }
   ],
   "tags": [
