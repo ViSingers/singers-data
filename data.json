@@ -59,9 +59,66 @@
       "id": 92231866,
       "login": "Alejo5205",
       "name": "Alejo520"
+    },
+    {
+      "id": 146136628,
+      "login": "Julia-Baranyuk",
+      "name": "Julia-Baranyuk"
     }
   ],
   "singers": [
+    {
+      "id": 1208753553,
+      "avatarUrl": "main/タキスマナ Icon.png",
+      "repositoryName": "Takismana",
+      "name": "Your singer name",
+      "siteUrl": "https://utau.fandom.com/wiki/Takismana",
+      "details": {
+        "en": {
+          "description": "Takismana (タキスマナ) is a voicebank for the UTAU program. A mysterious pilot of alien origin, she navigates the cosmos in her ship, the ''Iris'', accompanied by her best friend – a glass spider Garasu Kumo (ガラス蜘蛛). Takismana’s voice is designed to be clear and expressive, capable of both soft, introspective tones and strong, confident ones. It carries a subtle otherworldly resonance, fitting her alien background. Takismana has a slender build. Her eyes are always hidden behind large, opaque pilot goggles that reflect the stars. Her most striking features are the spiral ******* and the dinosaur‑like ridges along her back. She wears a turquoise pilot’s jumpsuit and a matching helmet in a retro‑space style. She also has a katana, but doesn’t wear it all the time, for necessities only.\nPlease find the technical information in the voicebank readme file.",
+          "generalInfo": [
+            "Gender: Female",
+            "Height: 175 cm",
+            "Weight: 58 kg",
+            "Age: 39"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 146136628,
+      "updatedAt": "2026-04-12T18:07:14.000Z",
+      "createdAt": "2026-04-12T17:45:40Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "visinger/first_song_hitorinoyokai.mp3"
+          ],
+          "url": "visinger/CVVC.zip",
+          "name": "Takismana voicebank",
+          "description": {
+            "en": "Takismana"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "sus"
+        },
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "takismana"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": []
+    },
     {
       "id": 863240633,
       "avatarUrl": "main/image.png",
@@ -1035,6 +1092,12 @@
     },
     {
       "name": "humanoid"
+    },
+    {
+      "name": "sus"
+    },
+    {
+      "name": "takismana"
     }
   ],
   "voicebankTypes": [
