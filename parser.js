@@ -266,11 +266,31 @@ async function main() {
                 const membersSection = sections.find(s => s.name.toLowerCase() === "members");
                 if (membersSection) {
                     const groupName = descriptionSection.name || repo.name;
+                    
+                    const groupDescription = {
+                        "en": descriptionSection.content.filter(row => !row.trim().startsWith("!") && !row.trim().startsWith("[")).join("\n").trim()
+                    };
+
+                    for (const file of files) {
+                        const parts = file.name.split(".");
+                        if (file.text && parts.length === 3 && parts[0].toLowerCase() === "readme" && parts[2].toLowerCase() === "md") {
+                            const langCode = parts[1];
+                            const trRows = censorText(file.text).split(/\r?\n/).filter(r => r.trim() !== "");
+                            const trSecs = getSections(trRows);
+                            
+                            if (trSecs[0]) {
+                                groupDescription[langCode] = trSecs[0].content
+                                    .filter(r => !r.trim().startsWith("!") && !r.trim().startsWith("["))
+                                    .join("\n").trim();
+                            }
+                        }
+                    }
+
                     rawGroups.push({
                         id: repo.id,
                         repositoryPath: repo.full_name,
                         repositoryName: groupName,
-                        description: descriptionSection.content.filter(row => !row.trim().startsWith("!") && !row.trim().startsWith("[")).join("\n").trim(),
+                        description: groupDescription,
                         createdAt: repo.created_at,
                         updatedAt: effectiveDate.toISOString(),
                         memberUrls: extractGithubUrls(membersSection.content),
