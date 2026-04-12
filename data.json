@@ -484,31 +484,6 @@
       ]
     },
     {
-      "id": 1142793038,
-      "avatarUrl": "main/teto.bmp",
-      "repositoryName": "teto",
-      "name": "teto",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "- Gender: female\n- Height: idfk\n- Weight: 676767\n- Age: 676767",
-          "generalInfo": [
-            "Type: UTAU",
-            "Languages: jp"
-          ],
-          "termsOfUse": []
-        }
-      },
-      "creatorId": 257396582,
-      "updatedAt": "2026-01-26T21:39:58.000Z",
-      "createdAt": "2026-01-26T21:31:54Z",
-      "stars": 0,
-      "voicebanks": [],
-      "tags": [],
-      "videoUrls": [],
-      "imageUrls": []
-    },
-    {
       "id": 1066071758,
       "avatarUrl": "main/image.png",
       "repositoryName": "Daichi-Yoshida",
@@ -692,34 +667,6 @@
           "name": "masculine-voice"
         }
       ],
-      "videoUrls": [],
-      "imageUrls": []
-    },
-    {
-      "id": 967706768,
-      "avatarUrl": "main/teto.png",
-      "repositoryName": "Teto2R6-port",
-      "name": "kasane teto/重音テト",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "kasane teto is a synthV/utau voicebank made on Apr 1 of 2008 to troll vocaloid fans but she did not get a voice until later in 2008 when she go an utau voicebank now known a teto 2R6, and to celebrate teto geting a voicepeak voicebank\nI decide to port teto 2R6 to ViSingers.",
-          "generalInfo": [
-            "Gender: Chimera",
-            "Height: 159.5 m",
-            "Weight: 47173.6g",
-            "Age: 31",
-            "Chimera age: 15"
-          ],
-          "termsOfUse": []
-        }
-      },
-      "creatorId": 207936409,
-      "updatedAt": "2025-04-16T23:30:00.000Z",
-      "createdAt": "2025-04-16T21:52:02Z",
-      "stars": 0,
-      "voicebanks": [],
-      "tags": [],
       "videoUrls": [],
       "imageUrls": []
     },
