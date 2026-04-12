@@ -69,16 +69,7 @@
       "description": "The team behind the ViSingers website.",
       "createdAt": "2026-04-12T15:03:40Z",
       "updatedAt": "2026-04-12T18:57:03.000Z",
-      "memberUrls": [
-        "hhskt/awata_weak"
-      ],
-      "participants": [
-        {
-          "id": 863240633,
-          "name": "Awata Weak",
-          "repositoryName": "Awata_Weak"
-        }
-      ]
+      "participants": []
     }
   ],
   "singers": [
@@ -87,7 +78,6 @@
       "avatarUrl": "main/タキスマナ Icon.png",
       "repositoryName": "Takismana",
       "repoUrl": "julia-baranyuk/takismana",
-      "declaredGroupUrls": [],
       "name": "Your singer name",
       "siteUrl": "https://utau.fandom.com/wiki/Takismana",
       "details": {
@@ -142,9 +132,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "Awata_Weak",
       "repoUrl": "hhskt/awata_weak",
-      "declaredGroupUrls": [
-        "visingers/visingers-creators"
-      ],
       "name": "Awata Weak",
       "siteUrl": "https://hhs-kt.ru/awata-weak/",
       "details": {
@@ -393,19 +380,13 @@
         "main/gallery/original_ver.png",
         "main/gallery/original_ver_by_Сасюля.png"
       ],
-      "groups": [
-        {
-          "id": 1208642200,
-          "repositoryName": "ViSingers Creators"
-        }
-      ]
+      "groups": []
     },
     {
       "id": 1084211717,
       "avatarUrl": "main/image.png",
       "repositoryName": "Oktyabrina",
       "repoUrl": "chara964max/oktyabrina",
-      "declaredGroupUrls": [],
       "name": "Oktyabrina",
       "siteUrl": "https://www.youtube.com/@1D13D13/featured",
       "details": {
@@ -473,7 +454,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "akane_iirai",
       "repoUrl": "eliasadams/akane_iirai",
-      "declaredGroupUrls": [],
       "name": "Akane Iirai",
       "siteUrl": "",
       "details": {
@@ -523,7 +503,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "Hatsune-Miku",
       "repoUrl": "hhskt/hatsune-miku",
-      "declaredGroupUrls": [],
       "name": "Hatsune Miku",
       "siteUrl": "",
       "details": {
@@ -582,7 +561,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "Daichi-Yoshida",
       "repoUrl": "ryanfoxyt332/daichi-yoshida",
-      "declaredGroupUrls": [],
       "name": "Daichi Yoshida",
       "siteUrl": "",
       "details": {
@@ -706,7 +684,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "NITARI",
       "repoUrl": "wolfguy001/nitari",
-      "declaredGroupUrls": [],
       "name": "Nitari",
       "siteUrl": "",
       "details": {
@@ -775,7 +752,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "abarirenji",
       "repoUrl": "catstercatster/abarirenji",
-      "declaredGroupUrls": [],
       "name": "Abari Renji",
       "siteUrl": "https://abarirenji.weebly.com/",
       "details": {
@@ -905,7 +881,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "azurecobaltsynth",
       "repoUrl": "agentasteriski/azurecobaltsynth",
-      "declaredGroupUrls": [],
       "name": "Azure Cobalt",
       "siteUrl": "",
       "details": {
@@ -982,7 +957,6 @@
       "avatarUrl": "main/image.bmp",
       "repositoryName": "Sorano-Yuri",
       "repoUrl": "yuri2014/sorano-yuri",
-      "declaredGroupUrls": [],
       "name": "Sorano Yuri",
       "siteUrl": "",
       "details": {
@@ -1026,7 +1000,6 @@
       "avatarUrl": "main/bosay.jpg",
       "repositoryName": "ako",
       "repoUrl": "reddgun/ako",
-      "declaredGroupUrls": [],
       "name": "ako",
       "siteUrl": "",
       "details": {
@@ -1071,7 +1044,6 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "AlejoVisingers",
       "repoUrl": "alejo5205/alejovisingers",
-      "declaredGroupUrls": [],
       "name": "Alejo",
       "siteUrl": "",
       "details": {
