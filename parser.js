@@ -214,6 +214,7 @@ async function main() {
                         if (existingSinger.tags) existingSinger.tags.forEach(t => allTagsSet.add(t.name));
                         if (existingSinger.creatorId && !processedUserIds.has(existingSinger.creatorId)) processedUserIds.add(existingSinger.creatorId);
                     } else if (existingGroup) {
+                        existingGroup.stars = repo.stargazers_count;
                         rawGroups.push(existingGroup);
                     }
                     continue;
@@ -293,6 +294,7 @@ async function main() {
                         description: groupDescription,
                         createdAt: repo.created_at,
                         updatedAt: effectiveDate.toISOString(),
+                        stars: repo.stargazers_count,
                         memberUrls: extractGithubUrls(membersSection.content),
                         participants: []
                     });
