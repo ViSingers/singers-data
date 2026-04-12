@@ -381,7 +381,7 @@ async function main() {
                     id: repo.id,
                     avatarUrl: `${repo.default_branch}/${imageFile.path}`,
                     repositoryName: repo.name,
-                    repoUrl: `https://github.com/${repo.full_name.toLowerCase()}`,
+                    repoUrl: repo.full_name.toLowerCase(),
                     declaredGroupUrls: declaredGroupUrls,
                     name: singerName,
                     siteUrl: repo.homepage,
