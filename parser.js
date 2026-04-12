@@ -490,10 +490,8 @@ async function main() {
 
             for (const group of finalGroups) {
                 const groupRepoUrl = `${group.repositoryPath.toLowerCase()}`;
-                console.log(groupRepoUrl, singerRepoUrl);
                 const singerMentionsGroup = declaredUrls.includes(groupRepoUrl);
                 const groupMentionsSinger = group.memberUrls?.includes(singerRepoUrl);
-                console.log(singerMentionsGroup, groupMentionsSinger);
                 if (singerMentionsGroup && groupMentionsSinger) {
                     group.participants.push({
                         id: singer.id,
@@ -507,6 +505,9 @@ async function main() {
                         repositoryName: group.repositoryName
                     });
                 }
+
+                delete group.memberUrls;
+                delete singer.declaredGroupUrls;
             }
         }
 
