@@ -268,7 +268,7 @@ async function main() {
                     const groupName = descriptionSection.name || repo.name;
                     rawGroups.push({
                         id: repo.id,
-                        repo: repo.full_name,
+                        repositoryName: repo.full_name,
                         name: groupName,
                         description: descriptionSection.content.filter(row => !row.trim().startsWith("!") && !row.trim().startsWith("[")).join("\n").trim(),
                         createdAt: repo.created_at,
@@ -498,13 +498,13 @@ async function main() {
                     group.participants.push({
                         id: singer.id,
                         name: singer.name,
-                        repo: singer.repositoryName
+                        repositoryName: singer.repositoryName
                     });
                     
                     singer.groups.push({
                         id: group.id,
                         name: group.name,
-                        repo: group.repo
+                        repositoryName: group.repositoryName
                     });
                 }
             }
