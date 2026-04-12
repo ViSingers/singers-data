@@ -71,6 +71,19 @@ function getLanguagesList() {
         .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function extractGithubUrls(rows) {
+    const urls = new Set();
+    const text = rows.join(" ");
+    const regex = /https:\/\/github\.com\/([a-zA-Z0-9_.-]+)\/([a-zA-Z0-9_.-]+)/gi;
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+        let owner = match[1].toLowerCase();
+        let repoName = match[2].toLowerCase().replace(/\.git$/, '');
+        urls.add(`https://github.com/${owner}/${repoName}`);
+    }
+    return Array.from(urls);
+}
+
 async function loadBlockedList() {
     try {
         const fileContent = await fs.readFile(BLOCKED_FILENAME, 'utf-8');
@@ -103,12 +116,13 @@ async function loadExistingDatabase() {
         return {
             users: parsed.users || [],
             singers: parsed.singers || [],
+            groups: parsed.groups || [],
             tags: parsed.tags || [],
             languages: parsed.languages || []
         };
     } catch (error) {
         console.log("No existing database found or invalid JSON, starting fresh.");
-        return { users: [], singers: [], tags: [], languages: [] };
+        return { users: [], singers: [], groups: [], tags: [], languages: [] };
     }
 }
 
@@ -116,19 +130,18 @@ async function main() {
     console.log("Starting GitHub Parser...");
 
     const { blockedUsers, blockedRepos } = await loadBlockedList();
-
     const existingDb = await loadExistingDatabase();
 
     const usersMap = new Map(existingDb.users.map(u => [u.id, u]));
     const singersMap = new Map(existingDb.singers.map(s => [s.id, s]));
+    const groupsMap = new Map(existingDb.groups.map(g => [g.id, g]));
     const allTagsSet = new Set(existingDb.tags.map(t => t.name));
 
     let maxLocalTimestamp = 0;
-    if (existingDb.singers.length > 0) {
-        maxLocalTimestamp = existingDb.singers.reduce((max, s) => {
-            const ts = new Date(s.updatedAt).getTime();
-            return ts > max ? ts : max;
-        }, 0);
+    if (existingDb.singers.length > 0 || existingDb.groups.length > 0) {
+        const maxSingerTs = existingDb.singers.reduce((max, s) => Math.max(max, new Date(s.updatedAt).getTime()), 0);
+        const maxGroupTs = existingDb.groups.reduce((max, g) => Math.max(max, new Date(g.updatedAt).getTime()), 0);
+        maxLocalTimestamp = Math.max(maxSingerTs, maxGroupTs);
     }
 
     console.log(`Local DB is updated up to: ${new Date(maxLocalTimestamp).toISOString()}`);
@@ -136,6 +149,7 @@ async function main() {
     const processedUserIds = new Set();
     const processedRepoIds = new Set();
     const resultSingers = [];
+    const rawGroups = [];
     const languages = getLanguagesList();
 
     try {
@@ -186,21 +200,22 @@ async function main() {
                 const effectiveTs = effectiveDate.getTime();
 
                 const existingSinger = singersMap.get(repo.id);
+                const existingGroup = groupsMap.get(repo.id);
+                
                 const existingSingerTs = existingSinger ? new Date(existingSinger.updatedAt).getTime() : 0;
+                const existingGroupTs = existingGroup ? new Date(existingGroup.updatedAt).getTime() : 0;
 
-                if (existingSinger && existingSingerTs >= effectiveTs) {
+                if ((existingSinger && existingSingerTs >= effectiveTs) || (existingGroup && existingGroupTs >= effectiveTs)) {
                     console.log(`Skipping ${repo.full_name} (Up to date)`);
-
-                    existingSinger.stars = repo.stargazers_count;
-
-                    resultSingers.push(existingSinger);
-
-                    if (existingSinger.tags) existingSinger.tags.forEach(t => allTagsSet.add(t.name));
-
-                    if (existingSinger.creatorId && !processedUserIds.has(existingSinger.creatorId)) {
-                        processedUserIds.add(existingSinger.creatorId);
+                    
+                    if (existingSinger) {
+                        existingSinger.stars = repo.stargazers_count;
+                        resultSingers.push(existingSinger);
+                        if (existingSinger.tags) existingSinger.tags.forEach(t => allTagsSet.add(t.name));
+                        if (existingSinger.creatorId && !processedUserIds.has(existingSinger.creatorId)) processedUserIds.add(existingSinger.creatorId);
+                    } else if (existingGroup) {
+                        rawGroups.push(existingGroup);
                     }
-
                     continue;
                 }
 
@@ -210,39 +225,22 @@ async function main() {
                 if (!processedUserIds.has(githubUserId) || !usersMap.has(githubUserId)) {
                     let userObj = usersMap.get(githubUserId);
                     let fullName = repo.owner.login;
-
                     try {
                         const userDetails = await octokit.rest.users.getByUsername({ username: repo.owner.login });
                         fullName = userDetails.data.name || userDetails.data.login;
                     } catch (err) { }
-
                     if (userObj) {
                         userObj.login = repo.owner.login;
                         userObj.name = fullName;
                     } else {
-                        userObj = {
-                            id: githubUserId,
-                            login: repo.owner.login,
-                            name: fullName
-                        };
+                        userObj = { id: githubUserId, login: repo.owner.login, name: fullName };
                         usersMap.set(githubUserId, userObj);
                     }
                     processedUserIds.add(githubUserId);
                 }
                 const currentUser = usersMap.get(githubUserId);
 
-                const releasesData = await octokit.rest.repos.listReleases({
-                    owner: repo.owner.login,
-                    repo: repo.name,
-                    per_page: 100
-                });
-                const releases = releasesData.data;
-
-                const graphqlResult = await octokit.graphql(GET_REPO_QUERY, {
-                    owner: repo.owner.login,
-                    name: repo.name
-                });
-
+                const graphqlResult = await octokit.graphql(GET_REPO_QUERY, { owner: repo.owner.login, name: repo.name });
                 const entries = graphqlResult.repository?.object?.entries || [];
                 const files = entries.map(entry => ({
                     name: entry.name,
@@ -265,6 +263,21 @@ async function main() {
                 const descriptionSection = sections[0];
                 if (!descriptionSection) continue;
 
+                const membersSection = sections.find(s => s.name.toLowerCase() === "members");
+                if (membersSection) {
+                    const groupName = descriptionSection.name || repo.name;
+                    rawGroups.push({
+                        id: repo.id,
+                        repo: repo.full_name,
+                        name: groupName,
+                        createdAt: repo.created_at,
+                        updatedAt: effectiveDate.toISOString(),
+                        memberUrls: extractGithubUrls(membersSection.content),
+                        participants: []
+                    });
+                    continue;
+                }
+
                 let singerName = descriptionSection.name;
                 const lowerDescName = singerName ? singerName.toLowerCase() : "";
                 if (lowerDescName.includes("info") || lowerDescName.includes("desc")) {
@@ -274,11 +287,18 @@ async function main() {
                 const generalInfoSection = sections[1];
                 const videosSection = sections.find(s => s.name.toLowerCase() === "videos");
                 const termsOfUseSection = sections.find(s => s.name.toLowerCase() === "terms of use");
+                const groupsSection = sections.find(s => s.name.toLowerCase() === "groups");
                 const termsOfUseSectionIndex = termsOfUseSection ? sections.indexOf(termsOfUseSection) : -1;
+                
+                const declaredGroupUrls = groupsSection ? extractGithubUrls(groupsSection.content) : [];
 
                 const voicebankSections = sections.slice(2).filter(s => !["groups", "videos", "terms of use"].includes(s.name.toLowerCase()));
                 const voicebanks = [];
                 const downloadUrlRegex = new RegExp(`^https://github\\.com/${repo.owner.login}/${repo.name}/releases/download/`, 'i');
+                
+                const releasesData = await octokit.rest.repos.listReleases({ owner: repo.owner.login, repo: repo.name, per_page: 100 });
+                const releases = releasesData.data;
+
                 for (const vbSection of voicebankSections) {
                     const vbDescription = vbSection.content.filter(row => !row.trim().startsWith("-")).join("\n").trim();
                     const langRow = vbSection.content.find(row => row.trim().startsWith("- Languages:"));
@@ -360,6 +380,8 @@ async function main() {
                     id: repo.id,
                     avatarUrl: `${repo.default_branch}/${imageFile.path}`,
                     repositoryName: repo.name,
+                    repoUrl: `https://github.com/${repo.full_name.toLowerCase()}`,
+                    declaredGroupUrls: declaredGroupUrls,
                     name: singerName,
                     siteUrl: repo.homepage,
                     details: { "en": { description, generalInfo, termsOfUse } },
@@ -367,7 +389,8 @@ async function main() {
                     updatedAt: effectiveDate.toISOString(),
                     createdAt: repo.created_at,
                     stars: repo.stargazers_count,
-                    voicebanks, tags: currentSingerTags, videoUrls, imageUrls
+                    voicebanks, tags: currentSingerTags, videoUrls, imageUrls,
+                    groups: []
                 };
 
                 for (const file of files) {
@@ -394,7 +417,6 @@ async function main() {
 
             const lastRepoInPage = repos[repos.length - 1];
             const lastRepoDateTs = new Date(lastRepoInPage.updated_at).getTime();
-            console.log(`Last repo on page updated at: ${lastRepoInPage.updated_at}`);
             
             if (maxLocalTimestamp > 0 && lastRepoDateTs < maxLocalTimestamp) {
                 console.log(`Reached data older than local DB (${new Date(maxLocalTimestamp).toISOString()}). Stopping pagination.`);
@@ -408,31 +430,86 @@ async function main() {
             let addedCount = 0;
             for (const oldSinger of existingDb.singers) {
                 if (!processedRepoIds.has(oldSinger.id)) {
-                    
                     const creator = usersMap.get(oldSinger.creatorId);
                     const ownerLogin = creator ? creator.login.toLowerCase() : "";
                     const repoFullName = `${ownerLogin}/${oldSinger.repositoryName}`.toLowerCase();
 
-                    if (ownerLogin && blockedUsers.has(ownerLogin)) {
-                        console.log(`Removing existing singer "${oldSinger.name}" (User blocked: ${blockedUsers.get(ownerLogin)})`);
-                        continue;
-                    }
-
-                    if (ownerLogin && blockedRepos.has(repoFullName)) {
-                        console.log(`Removing existing singer "${oldSinger.name}" (Repo blocked: ${blockedRepos.get(repoFullName)})`);
-                        continue;
-                    }
+                    if (ownerLogin && blockedUsers.has(ownerLogin)) continue;
+                    if (ownerLogin && blockedRepos.has(repoFullName)) continue;
                     
                     resultSingers.push(oldSinger);
-
                     if (oldSinger.tags) oldSinger.tags.forEach(t => allTagsSet.add(t.name));
-
                     addedCount++;
                 }
             }
-            if (addedCount > 0) {
-                console.log(`Added ${addedCount} existing singers from old DB (skipped by search).`);
+            if (addedCount > 0) console.log(`Added ${addedCount} existing singers from old DB (skipped by search).`);
+        }
+
+        if (existingDb.groups.length > 0) {
+            let addedGroups = 0;
+            for (const oldGroup of existingDb.groups) {
+                if (!processedRepoIds.has(oldGroup.id)) {
+                    const ownerLogin = oldGroup.repo.split('/')[0].toLowerCase();
+                    const repoFullName = oldGroup.repo.toLowerCase();
+
+                    if (ownerLogin && blockedUsers.has(ownerLogin)) continue;
+                    if (ownerLogin && blockedRepos.has(repoFullName)) continue;
+                    
+                    rawGroups.push(oldGroup);
+                    addedGroups++;
+                }
             }
+            if (addedGroups > 0) console.log(`Added ${addedGroups} existing groups from old DB.`);
+        }
+
+        console.log("\nResolving Group memberships...");
+
+        const groupsByName = new Map();
+        for (const g of rawGroups) {
+            const key = g.name.toLowerCase();
+            if (!groupsByName.has(key)) {
+                groupsByName.set(key, g);
+            } else {
+                const existing = groupsByName.get(key);
+                if (new Date(g.createdAt).getTime() < new Date(existing.createdAt).getTime()) {
+                    groupsByName.set(key, g);
+                }
+            }
+        }
+        const finalGroups = Array.from(groupsByName.values());
+        finalGroups.forEach(g => g.participants = []);
+
+        for (const singer of resultSingers) {
+            singer.groups = [];
+            
+            const creator = usersMap.get(singer.creatorId);
+            const fallbackUrl = creator ? `https://github.com/${creator.login}/${singer.repositoryName}`.toLowerCase() : "";
+            const singerRepoUrl = singer.repoUrl || fallbackUrl;
+            const declaredUrls = singer.declaredGroupUrls || [];
+
+            for (const group of finalGroups) {
+                const groupRepoUrl = `https://github.com/${group.repo.toLowerCase()}`;
+
+                const singerMentionsGroup = declaredUrls.includes(groupRepoUrl);
+                const groupMentionsSinger = group.memberUrls?.includes(singerRepoUrl);
+
+                if (singerMentionsGroup && groupMentionsSinger) {
+                    group.participants.push({
+                        id: singer.id,
+                        name: singer.name,
+                        repo: singer.repositoryName
+                    });
+                    
+                    singer.groups.push({
+                        id: group.id,
+                        name: group.name,
+                        repo: group.repo
+                    });
+                }
+            }
+            
+            delete singer.repoUrl;
+            delete singer.declaredGroupUrls;
         }
 
         const finalUsers = Array.from(usersMap.values());
@@ -440,6 +517,7 @@ async function main() {
 
         const dbOutput = {
             users: finalUsers,
+            groups: finalGroups,
             singers: resultSingers,
             tags: finalTags,
             voicebankTypes: VOICEBANK_TYPES,
@@ -458,12 +536,11 @@ async function main() {
         console.log(`1. ${DB_FILENAME} (Size: ${(jsonFormatted.length / 1024).toFixed(2)} KB)`);
         console.log(`2. ${MINIFIED_FILENAME} (Size: ${(jsonMinified.length / 1024).toFixed(2)} KB)`);
 
-        console.log(`Users: ${finalUsers.length}, Singers: ${resultSingers.length}, Tags: ${finalTags.length}, Languages: ${languages.length}`);
+        console.log(`Users: ${finalUsers.length}, Singers: ${resultSingers.length}, Groups: ${finalGroups.length}, Tags: ${finalTags.length}, Languages: ${languages.length}`);
 
     } catch (e) {
         console.error("Global Error:", e);
     }
-
 }
 
 main();
