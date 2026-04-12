@@ -290,7 +290,8 @@ async function main() {
                     rawGroups.push({
                         id: repo.id,
                         repositoryPath: repo.full_name,
-                        repositoryName: groupName,
+                        repositoryName: repo.name,
+                        name: groupName,
                         description: groupDescription,
                         createdAt: repo.created_at,
                         updatedAt: effectiveDate.toISOString(),
