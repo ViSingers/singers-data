@@ -72,7 +72,13 @@
       "memberUrls": [
         "hhskt/awata_weak"
       ],
-      "participants": []
+      "participants": [
+        {
+          "id": 863240633,
+          "name": "Awata Weak",
+          "repositoryName": "Awata_Weak"
+        }
+      ]
     }
   ],
   "singers": [
@@ -80,7 +86,7 @@
       "id": 1208753553,
       "avatarUrl": "main/タキスマナ Icon.png",
       "repositoryName": "Takismana",
-      "repoUrl": "https://github.com/julia-baranyuk/takismana",
+      "repoUrl": "julia-baranyuk/takismana",
       "declaredGroupUrls": [],
       "name": "Your singer name",
       "siteUrl": "https://utau.fandom.com/wiki/Takismana",
@@ -135,7 +141,7 @@
       "id": 863240633,
       "avatarUrl": "main/image.png",
       "repositoryName": "Awata_Weak",
-      "repoUrl": "https://github.com/hhskt/awata_weak",
+      "repoUrl": "hhskt/awata_weak",
       "declaredGroupUrls": [
         "visingers/visingers-creators"
       ],
@@ -387,13 +393,18 @@
         "main/gallery/original_ver.png",
         "main/gallery/original_ver_by_Сасюля.png"
       ],
-      "groups": []
+      "groups": [
+        {
+          "id": 1208642200,
+          "repositoryName": "ViSingers Creators"
+        }
+      ]
     },
     {
       "id": 1084211717,
       "avatarUrl": "main/image.png",
       "repositoryName": "Oktyabrina",
-      "repoUrl": "https://github.com/chara964max/oktyabrina",
+      "repoUrl": "chara964max/oktyabrina",
       "declaredGroupUrls": [],
       "name": "Oktyabrina",
       "siteUrl": "https://www.youtube.com/@1D13D13/featured",
@@ -461,7 +472,7 @@
       "id": 1207196199,
       "avatarUrl": "main/image.png",
       "repositoryName": "akane_iirai",
-      "repoUrl": "https://github.com/eliasadams/akane_iirai",
+      "repoUrl": "eliasadams/akane_iirai",
       "declaredGroupUrls": [],
       "name": "Akane Iirai",
       "siteUrl": "",
@@ -511,7 +522,7 @@
       "id": 1199599611,
       "avatarUrl": "main/image.png",
       "repositoryName": "Hatsune-Miku",
-      "repoUrl": "https://github.com/hhskt/hatsune-miku",
+      "repoUrl": "hhskt/hatsune-miku",
       "declaredGroupUrls": [],
       "name": "Hatsune Miku",
       "siteUrl": "",
@@ -570,7 +581,7 @@
       "id": 1066071758,
       "avatarUrl": "main/image.png",
       "repositoryName": "Daichi-Yoshida",
-      "repoUrl": "https://github.com/ryanfoxyt332/daichi-yoshida",
+      "repoUrl": "ryanfoxyt332/daichi-yoshida",
       "declaredGroupUrls": [],
       "name": "Daichi Yoshida",
       "siteUrl": "",
@@ -694,7 +705,7 @@
       "id": 971356574,
       "avatarUrl": "main/image.png",
       "repositoryName": "NITARI",
-      "repoUrl": "https://github.com/wolfguy001/nitari",
+      "repoUrl": "wolfguy001/nitari",
       "declaredGroupUrls": [],
       "name": "Nitari",
       "siteUrl": "",
@@ -763,7 +774,7 @@
       "id": 875265696,
       "avatarUrl": "main/image.png",
       "repositoryName": "abarirenji",
-      "repoUrl": "https://github.com/catstercatster/abarirenji",
+      "repoUrl": "catstercatster/abarirenji",
       "declaredGroupUrls": [],
       "name": "Abari Renji",
       "siteUrl": "https://abarirenji.weebly.com/",
@@ -893,7 +904,7 @@
       "id": 611531368,
       "avatarUrl": "main/image.png",
       "repositoryName": "azurecobaltsynth",
-      "repoUrl": "https://github.com/agentasteriski/azurecobaltsynth",
+      "repoUrl": "agentasteriski/azurecobaltsynth",
       "declaredGroupUrls": [],
       "name": "Azure Cobalt",
       "siteUrl": "",
@@ -970,7 +981,7 @@
       "id": 874191114,
       "avatarUrl": "main/image.bmp",
       "repositoryName": "Sorano-Yuri",
-      "repoUrl": "https://github.com/yuri2014/sorano-yuri",
+      "repoUrl": "yuri2014/sorano-yuri",
       "declaredGroupUrls": [],
       "name": "Sorano Yuri",
       "siteUrl": "",
@@ -1014,7 +1025,7 @@
       "id": 871310322,
       "avatarUrl": "main/bosay.jpg",
       "repositoryName": "ako",
-      "repoUrl": "https://github.com/reddgun/ako",
+      "repoUrl": "reddgun/ako",
       "declaredGroupUrls": [],
       "name": "ako",
       "siteUrl": "",
@@ -1059,7 +1070,7 @@
       "id": 868330308,
       "avatarUrl": "main/image.png",
       "repositoryName": "AlejoVisingers",
-      "repoUrl": "https://github.com/alejo5205/alejovisingers",
+      "repoUrl": "alejo5205/alejovisingers",
       "declaredGroupUrls": [],
       "name": "Alejo",
       "siteUrl": "",
