@@ -268,8 +268,8 @@ async function main() {
                     const groupName = descriptionSection.name || repo.name;
                     rawGroups.push({
                         id: repo.id,
-                        repositoryName: repo.full_name,
-                        name: groupName,
+                        repositoryPath: repo.full_name,
+                        repositoryName: groupName,
                         description: descriptionSection.content.filter(row => !row.trim().startsWith("!") && !row.trim().startsWith("[")).join("\n").trim(),
                         createdAt: repo.created_at,
                         updatedAt: effectiveDate.toISOString(),
