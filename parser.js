@@ -20,7 +20,8 @@ const VOICEBANK_TYPES = [
     "niaoniao",
     "deepvocal",
     "nnsvs",
-    "coeiroink"
+    "coeiroink",
+    "fish-svc"
 ];
 
 const YOUTUBE_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:(?:\.be\/))([a-zA-Z0-9_-]{11})/g;
