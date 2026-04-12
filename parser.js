@@ -2,12 +2,12 @@ import { Octokit } from "octokit";
 import fs from "fs/promises";
 import Filter from "bad-words";
 import iso6391 from 'iso-639-1';
+import yaml from 'yaml';
 import 'dotenv/config';
-
-import { promisify } from 'util';
 
 const DB_FILENAME = "data.json";
 const MINIFIED_FILENAME = "data.min.json";
+const BLOCKED_FILENAME = "blocked.yml";
 const APP_NAME = "ViSingersBot";
 
 const VOICEBANK_TYPES = [
@@ -71,6 +71,31 @@ function getLanguagesList() {
         .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+async function loadBlockedList() {
+    try {
+        const fileContent = await fs.readFile(BLOCKED_FILENAME, 'utf-8');
+        const parsed = yaml.parse(fileContent) || {};
+        
+        const blockedUsers = new Map();
+        const blockedRepos = new Map();
+
+        for (const [key, reason] of Object.entries(parsed)) {
+            const lowerKey = key.toLowerCase();
+            if (lowerKey.includes('/')) {
+                blockedRepos.set(lowerKey, reason);
+            } else {
+                blockedUsers.set(lowerKey, reason);
+            }
+        }
+        
+        console.log(`Loaded blocks: ${blockedUsers.size} users, ${blockedRepos.size} repositories.`);
+        return { blockedUsers, blockedRepos };
+    } catch (e) {
+        console.log(`No ${BLOCKED_FILENAME} found or invalid YAML, proceeding without blocks.`);
+        return { blockedUsers: new Map(), blockedRepos: new Map() };
+    }
+}
+
 async function loadExistingDatabase() {
     try {
         const data = await fs.readFile(DB_FILENAME, 'utf-8');
@@ -89,6 +114,8 @@ async function loadExistingDatabase() {
 
 async function main() {
     console.log("Starting GitHub Parser...");
+
+    const { blockedUsers, blockedRepos } = await loadBlockedList();
 
     const existingDb = await loadExistingDatabase();
 
@@ -138,9 +165,16 @@ async function main() {
             for (const repo of repos) {
                 if (repo.name.includes("template")) continue;
 
-                const knownUser = usersMap.get(repo.owner.id);
-                if (knownUser && knownUser.isBlocked) {
-                    console.log(`Skipping ${repo.full_name} (Creator is blocked)`);
+                const ownerLogin = repo.owner.login.toLowerCase();
+                const repoFullName = repo.full_name.toLowerCase();
+
+                if (blockedUsers.has(ownerLogin)) {
+                    console.log(`Skipping ${repo.full_name} (User blocked: ${blockedUsers.get(ownerLogin)})`);
+                    continue;
+                }
+
+                if (blockedRepos.has(repoFullName)) {
+                    console.log(`Skipping ${repo.full_name} (Repo blocked: ${blockedRepos.get(repoFullName)})`);
                     continue;
                 }
                 
@@ -189,8 +223,7 @@ async function main() {
                         userObj = {
                             id: githubUserId,
                             login: repo.owner.login,
-                            name: fullName,
-                            isBlocked: false
+                            name: fullName
                         };
                         usersMap.set(githubUserId, userObj);
                     }
@@ -296,10 +329,11 @@ async function main() {
                     .filter(t => t.toLowerCase() !== "visingers")
                     .map(t => t.toLowerCase().replace("visingers-", ""))
                     .filter(t => {
-                        const isLang = languages.some(l => l.name === t || l.fullName === t);
-                        const isType = VOICEBANK_TYPES.some(typ => typ === t);
-                        const isUser = t === currentUser.login.toLowerCase();
-                        const isDescName = t === singerName.toLowerCase() || singerName.toLowerCase().split(" ").includes(t);
+                        const tag = t.replace("-", "").replace("_", "");
+                        const isLang = languages.some(l => l.name === tag || l.fullName === tag);
+                        const isType = VOICEBANK_TYPES.some(typ => typ === tag);
+                        const isUser = tag.includes(currentUser.login.toLowerCase().replace("-", "").replace(" ", "")) || tag.includes(currentUser.login.toLowerCase().replace("-", "").replace(" ", ""));
+                        const isDescName = singerName.toLowerCase().split(" ").any(singerNamePart => tag.includes(singerNamePart));
                         return !isLang && !isType && !isUser && !isDescName;
                     });
 
@@ -374,9 +408,18 @@ async function main() {
             let addedCount = 0;
             for (const oldSinger of existingDb.singers) {
                 if (!processedRepoIds.has(oldSinger.id)) {
+                    
                     const creator = usersMap.get(oldSinger.creatorId);
-                    if (creator && creator.isBlocked) {
-                        console.log(`Removing existing singer "${oldSinger.name}" (Creator is blocked)`);
+                    const ownerLogin = creator ? creator.login.toLowerCase() : "";
+                    const repoFullName = `${ownerLogin}/${oldSinger.repositoryName}`.toLowerCase();
+
+                    if (ownerLogin && blockedUsers.has(ownerLogin)) {
+                        console.log(`Removing existing singer "${oldSinger.name}" (User blocked: ${blockedUsers.get(ownerLogin)})`);
+                        continue;
+                    }
+
+                    if (ownerLogin && blockedRepos.has(repoFullName)) {
+                        console.log(`Removing existing singer "${oldSinger.name}" (Repo blocked: ${blockedRepos.get(repoFullName)})`);
                         continue;
                     }
                     
