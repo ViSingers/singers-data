@@ -124,9 +124,9 @@
         }
       },
       "creatorId": 129613118,
-      "updatedAt": "2026-04-16T16:50:19.000Z",
+      "updatedAt": "2026-04-25T10:15:34.000Z",
       "createdAt": "2024-09-26T00:48:01Z",
-      "stars": 3,
+      "stars": 4,
       "voicebanks": [
         {
           "type": "diffsinger",
@@ -551,9 +551,9 @@
         }
       },
       "creatorId": 129613118,
-      "updatedAt": "2026-04-02T18:31:02.000Z",
+      "updatedAt": "2026-04-25T10:15:02.000Z",
       "createdAt": "2026-04-02T14:08:34Z",
-      "stars": 0,
+      "stars": 1,
       "voicebanks": [
         {
           "type": "utau",
