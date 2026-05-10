@@ -59,6 +59,11 @@
       "id": 92231866,
       "login": "Alejo5205",
       "name": "Alejo520"
+    },
+    {
+      "id": 283418435,
+      "login": "olenabilous89-cmyk",
+      "name": "olenabilous89-cmyk"
     }
   ],
   "groups": [
@@ -87,6 +92,40 @@
     }
   ],
   "singers": [
+    {
+      "id": 1234739138,
+      "avatarUrl": "main/240625gekiyaku-v+web.PNG",
+      "repositoryName": "Gekiyaku-Vocaloid-6",
+      "repoUrl": "olenabilous89-cmyk/gekiyaku-vocaloid-6",
+      "declaredGroupUrls": [],
+      "name": "Gekiyaku Vocaloid 6",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Gekiyaku is here",
+          "generalInfo": [
+            "Gender: female",
+            "Height: 0.5m",
+            "Color: white",
+            "Age: 16"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 283418435,
+      "updatedAt": "2026-05-10T15:38:21.000Z",
+      "createdAt": "2026-05-10T15:24:25Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [
+        {
+          "name": "femine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
     {
       "id": 863240633,
       "avatarUrl": "main/image.png",
@@ -1159,6 +1198,9 @@
     },
     {
       "name": "humanoid"
+    },
+    {
+      "name": "femine-voice"
     }
   ],
   "voicebankTypes": [
