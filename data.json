@@ -102,9 +102,7 @@
       "avatarUrl": "main/image.png",
       "repositoryName": "daisukeds",
       "repoUrl": "xhr0me/daisukeds",
-      "declaredGroupUrls": [
-        "visingers/group-template"
-      ],
+      "declaredGroupUrls": [],
       "name": "Daisuke",
       "siteUrl": "",
       "details": {
@@ -130,7 +128,7 @@
         }
       },
       "creatorId": 128017950,
-      "updatedAt": "2026-05-11T08:09:16.000Z",
+      "updatedAt": "2026-05-11T08:19:19.000Z",
       "createdAt": "2026-05-11T07:44:25Z",
       "stars": 0,
       "voicebanks": [
