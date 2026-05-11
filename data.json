@@ -147,9 +147,9 @@
         }
       },
       "creatorId": 128017950,
-      "updatedAt": "2026-05-11T09:41:05.000Z",
+      "updatedAt": "2026-05-11T15:54:05.000Z",
       "createdAt": "2026-05-11T07:44:25Z",
-      "stars": 0,
+      "stars": 1,
       "voicebanks": [
         {
           "type": "diffsinger",
