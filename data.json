@@ -99,7 +99,7 @@
   "singers": [
     {
       "id": 1235306110,
-      "avatarUrl": "main/poster2.png",
+      "avatarUrl": "main/image.png",
       "repositoryName": "daisukeds",
       "repoUrl": "xhr0me/daisukeds",
       "declaredGroupUrls": [],
@@ -107,7 +107,7 @@
       "siteUrl": "",
       "details": {
         "en": {
-          "description": "A male virtual singer with a bright voice. Diverse vocal modes make it possible to achieve different emotions in seven different languages!\nNative language: Russian\nDataset includes: Russian, Japanese, English, Chinese, Korean, Portuguese, French.\nFeatures 7 different vocal modes:\n- Standard - Only chest range, legacy data\n- Classic - Calm tone with falsetto high notes\n- Warm - More soft and cute voice, legacy data\n- Vivid - A youthful strong sounding voice with big high range, legacy data\n- Powerful - More strong and masculine sound, legacy data\n- Falsetto - High ranged airy data, legacy data\n- Mature - Deep and masculine strong voice",
+          "description": "A male virtual singer with a bright voice. Diverse vocal modes make it possible to achieve different emotions in seven different languages!\nNative language: Russian\nDataset includes: Russian, Japanese, English.\nFeatures 7 different vocal modes:\n- Standard - Only chest range, legacy data\n- Classic - Calm tone with falsetto high notes\n- Warm - More soft and cute voice, legacy data\n- Vivid - A youthful strong sounding voice with big high range, legacy data\n- Powerful - More strong and masculine sound, legacy data\n- Falsetto - High ranged airy data, legacy data\n- Mature - Deep and masculine strong voice",
           "generalInfo": [
             "Gender: Male",
             "Height: 187cm",
@@ -128,10 +128,36 @@
         }
       },
       "creatorId": 128017950,
-      "updatedAt": "2026-05-11T08:30:39.000Z",
+      "updatedAt": "2026-05-11T08:40:09.000Z",
       "createdAt": "2026-05-11T07:44:25Z",
       "stars": 0,
-      "voicebanks": [],
+      "voicebanks": [
+        {
+          "type": "diffsinger",
+          "languages": [
+            "en",
+            "ja",
+            "ko",
+            "pt",
+            "ru",
+            "zh"
+          ],
+          "sampleUrls": [
+            "diffsinger_v_114.1/classic_ja.mp3",
+            "diffsinger_v_114.1/falsetto_ja.mp3",
+            "diffsinger_v_114.1/mature_ja.mp3",
+            "diffsinger_v_114.1/powerful_ja.mp3",
+            "diffsinger_v_114.1/standard_ja.mp3",
+            "diffsinger_v_114.1/vivid_ja.mp3",
+            "diffsinger_v_114.1/warm_ja.mp3"
+          ],
+          "url": "diffsinger_v_114.1/Daisuke_DS_v114.1.wavenet.zip",
+          "name": "Diffsinger Voicebank",
+          "description": {
+            "en": "Diffsinger"
+          }
+        }
+      ],
       "tags": [
         {
           "name": "masculine-voice"
