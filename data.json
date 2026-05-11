@@ -116,7 +116,9 @@
           ],
           "termsOfUse": [
             "Commercial Use of Voicebank Allowed: Yes",
-            "Commercial Use of Character Allowed: Yes"
+            "Commercial Use of Character Allowed: Yes",
+            "Attribution: When publishing work using this voicebank, you are required to state the name of this voicebank",
+            "Attribution: When attributing the name or author of this voicebank, you must write the names exactly as written above. You cannot call the voicebank by any other name, nor can you attribute the voicebank to any other author"
           ]
         },
         "ru": {
@@ -131,36 +133,10 @@
         }
       },
       "creatorId": 128017950,
-      "updatedAt": "2026-05-11T08:59:15.000Z",
+      "updatedAt": "2026-05-11T09:05:07.000Z",
       "createdAt": "2026-05-11T07:44:25Z",
-      "stars": 0,
-      "voicebanks": [
-        {
-          "type": "diffsinger",
-          "languages": [
-            "en",
-            "ja",
-            "ko",
-            "pt",
-            "ru",
-            "zh"
-          ],
-          "sampleUrls": [
-            "diffsinger_v_114.1/classic_ja.mp3",
-            "diffsinger_v_114.1/falsetto_ja.mp3",
-            "diffsinger_v_114.1/mature_ja.mp3",
-            "diffsinger_v_114.1/powerful_ja.mp3",
-            "diffsinger_v_114.1/standard_ja.mp3",
-            "diffsinger_v_114.1/vivid_ja.mp3",
-            "diffsinger_v_114.1/warm_ja.mp3"
-          ],
-          "url": "diffsinger_v_114.1/Daisuke_DS_v114.1.wavenet.zip",
-          "name": "Diffsinger Voicebank",
-          "description": {
-            "en": "Diffsinger"
-          }
-        }
-      ],
+      "stars": 1,
+      "voicebanks": [],
       "tags": [
         {
           "name": "masculine-voice"
