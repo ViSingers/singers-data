@@ -354,7 +354,7 @@ async function main() {
                     const releaseArchive = lastRelease.assets.find(a => a.name.endsWith(".zip"));
                     if (!releaseArchive) continue;
 
-                    const releaseSamples = lastRelease.assets.filter(a => a.name.endsWith(".mp3") || a.name.endsWith(".wav")).map(a => a.browser_download_url);
+                    const releaseSamples = lastRelease.assets.filter(a => a.name.endsWith(".mp3") || a.name.endsWith(".wav") || a.name.endsWith(".ogg")).map(a => a.browser_download_url);
 
                     voicebanks.push({
                         type,
