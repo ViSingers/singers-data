@@ -64,6 +64,11 @@
       "id": 283418435,
       "login": "olenabilous89-cmyk",
       "name": "olenabilous89-cmyk"
+    },
+    {
+      "id": 128017950,
+      "login": "XHR0ME",
+      "name": "XHR0ME"
     }
   ],
   "groups": [
@@ -92,6 +97,80 @@
     }
   ],
   "singers": [
+    {
+      "id": 1235306110,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "daisukeds",
+      "repoUrl": "xhr0me/daisukeds",
+      "declaredGroupUrls": [
+        "visingers/group-template"
+      ],
+      "name": "Daisuke",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "A male virtual singer with a bright voice. Diverse vocal modes make it possible to achieve different emotions in seven different languages!\nNative language: Russian\nDataset includes: Russian, Japanese, English\nFeatures 7 different vocal modes:\n- Standard - Only chest range, legacy data\n- Classic - Calm tone with falsetto high notes\n- Warm - More soft and cute voice, legacy data\n- Vivid - A youthful strong sounding voice with big high range, legacy data\n- Powerful - More strong and masculine sound, legacy data\n- Falsetto - High ranged airy data, legacy data\n- Mature - Deep and masculine strong voice",
+          "generalInfo": [
+            "Gender: Male",
+            "Height: 187cm",
+            "Weight: 85kg",
+            "Age: ???"
+          ],
+          "termsOfUse": []
+        },
+        "ru": {
+          "description": "Мужской виртуальный певец с ярким голосом. Разнообразные вокальные режимы позволяют добиться разных эмоций на семи различных языках!\nРодной язык: русский\nНабор данных включает: русский, японский, английский\nИмеет 7 различных вокальных режимов:\n- Standard — только грудной диапазон, устаревшие данные\n- Classic — спокойный тембр с фальцетными высокими нотами\n- Warm — более мягкий и милый голос, устаревшие данные\n- Vivid — молодое сильное звучание с широким высоким диапазоном, устаревшие данные\n- Powerful — более сильное и мужественное звучание, устаревшие данные\n- Falsetto — воздушные высокие ноты, устаревшие данные\n- Mature — глубокий мужественный сильный голос",
+          "generalInfo": [
+            "Пол: Мужской",
+            "Рост: 187см",
+            "Вес: 85кг",
+            "Возраст: ???"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 128017950,
+      "updatedAt": "2026-05-11T08:09:16.000Z",
+      "createdAt": "2026-05-11T07:44:25Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "diffsinger",
+          "languages": [
+            "en",
+            "ja",
+            "ko",
+            "ru",
+            "zh"
+          ],
+          "sampleUrls": [
+            "diffsinger_v_114.1/classic_ja.mp3",
+            "diffsinger_v_114.1/falsetto_ja.mp3",
+            "diffsinger_v_114.1/mature_ja.mp3",
+            "diffsinger_v_114.1/powerful_ja.mp3",
+            "diffsinger_v_114.1/standard_ja.mp3",
+            "diffsinger_v_114.1/vivid_ja.mp3",
+            "diffsinger_v_114.1/warm_ja.mp3"
+          ],
+          "url": "diffsinger_v_114.1/Daisuke_DS_v114.1.wavenet.zip",
+          "name": "First test bank",
+          "description": {
+            "en": "Diffsinger",
+            "ru": "Описание 1"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "masculine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [
+        "main/gallery/dskltsplshrt.png"
+      ],
+      "groups": []
+    },
     {
       "id": 1234739138,
       "avatarUrl": "main/240625gekiyaku-v+web.PNG",
