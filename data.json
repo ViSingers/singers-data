@@ -98,6 +98,55 @@
   ],
   "singers": [
     {
+      "id": 1236694798,
+      "avatarUrl": "main/Tsuina_V6phys.png",
+      "repositoryName": "Tsuina-Chan-V6",
+      "repoUrl": "olenabilous89-cmyk/tsuina-chan-v6",
+      "declaredGroupUrls": [],
+      "name": "Tsuina-Chan-V6",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Tsuina-Chan V6",
+          "generalInfo": [
+            "Gender: Female",
+            "Height: 111m",
+            "Weight: 20",
+            "Age: 20"
+          ],
+          "termsOfUse": []
+        },
+        "ru": {
+          "description": "Хороший пример: [Awata Weak](https://github.com/hhskt/Awata_Weak)\nКакое-то описание на русском",
+          "generalInfo": [
+            "Пол: Тест",
+            "Рост: 111м",
+            "Вес: 222г",
+            "Возраст: 33"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 283418435,
+      "updatedAt": "2026-05-12T13:58:55.000Z",
+      "createdAt": "2026-05-12T13:39:21Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [
+        {
+          "name": "tsuina-chan-v6"
+        },
+        {
+          "name": "vocaloid"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [
+        "main/gallery/1.png"
+      ],
+      "groups": []
+    },
+    {
       "id": 1235306110,
       "avatarUrl": "main/image.png",
       "repositoryName": "daisukeds",
@@ -1298,6 +1347,12 @@
     },
     {
       "name": "humanoid"
+    },
+    {
+      "name": "tsuina-chan-v6"
+    },
+    {
+      "name": "vocaloid"
     }
   ],
   "voicebankTypes": [
