@@ -24,7 +24,7 @@ const VOICEBANK_TYPES = [
     "fish-svc"
 ];
 
-const YOUTUBE_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:(?:\.be\/))([a-zA-Z0-9_-]{11})/g;
+const YOUTUBE_REGEX = /(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/))([a-zA-Z0-9_-]{11})/g;
 
 const GET_REPO_QUERY = `query($owner: String!, $name: String!) { repository(owner: $owner, name: $name) { object(expression: "HEAD:") { ... on Tree { entries { name type path object { ... on Blob { text byteSize } } } } } } }`;
 
