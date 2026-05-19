@@ -69,6 +69,11 @@
       "id": 92231866,
       "login": "Alejo5205",
       "name": "Alejo520"
+    },
+    {
+      "id": 188595288,
+      "login": "Mashiro39399",
+      "name": "Shirita_ii"
     }
   ],
   "groups": [
@@ -97,6 +102,43 @@
     }
   ],
   "singers": [
+    {
+      "id": 1244016145,
+      "avatarUrl": "main/image.jpg",
+      "repositoryName": "NESTER",
+      "repoUrl": "mashiro39399/nester",
+      "declaredGroupUrls": [],
+      "name": "NESTER",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "NESTER is a humanoid-like robot, a \"human\" version of the NES console by the Nintendo. She may be seen as cold and aggressive, but she just can't express her emotions properly. NESTER likes playing games, and especially hates corruptions and/or cartridge tilting.\nHer voicebank was created from the samples of NES, more specifically from the 2A03 sound chip of the console. Art by CelestaSi.",
+          "generalInfo": [
+            "Gender: Female/Robot",
+            "Height: 195cm/6'5\"",
+            "Weight: 89kg",
+            "Age: 40+ years"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 188595288,
+      "updatedAt": "2026-05-19T22:44:37.000Z",
+      "createdAt": "2026-05-19T22:15:48Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [
+        {
+          "name": "artificial-voice"
+        },
+        {
+          "name": "feminine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
     {
       "id": 1236694798,
       "avatarUrl": "main/Tsuina_V6phys.png",
@@ -1355,6 +1397,9 @@
     },
     {
       "name": "humanoid"
+    },
+    {
+      "name": "artificial-voice"
     }
   ],
   "voicebankTypes": [
