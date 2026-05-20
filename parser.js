@@ -351,7 +351,7 @@ async function main() {
                     }
 
                     if (!lastRelease) continue;
-                    const releaseArchive = lastRelease.assets.find(a => a.name.endsWith(".zip"));
+                    const releaseArchive = lastRelease.assets.find(a => a.name.endsWith(".zip") || a => a.name.endsWith(".rar") || a => a.name.endsWith(".7z"));
                     if (!releaseArchive) continue;
 
                     const releaseSamples = lastRelease.assets.filter(a => a.name.endsWith(".mp3") || a.name.endsWith(".wav") || a.name.endsWith(".ogg")).map(a => a.browser_download_url);
