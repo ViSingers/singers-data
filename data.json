@@ -119,11 +119,17 @@
             "Weight: 89kg",
             "Age: 40+ years"
           ],
-          "termsOfUse": []
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No.",
+            "Commercial Use of Character Allowed: No.",
+            "R-18 Content Allowed: Permission Required.",
+            "Use of the Design for AI Videos Allowed: No.",
+            "Use of Voicebank for Training AI Allowed: Permission Required."
+          ]
         }
       },
       "creatorId": 188595288,
-      "updatedAt": "2026-06-07T23:36:10.000Z",
+      "updatedAt": "2026-06-08T17:00:03.000Z",
       "createdAt": "2026-05-19T22:15:48Z",
       "stars": 0,
       "voicebanks": [
@@ -156,6 +162,20 @@
           "name": "MYCOEIROINK",
           "description": {
             "en": "NESTER'S first Text-To-Speech voicebank for the COEIROINK platform."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "en"
+          ],
+          "sampleUrls": [
+            "nester-c%2Bv/queen.of.venus.wav"
+          ],
+          "url": "nester-c%2Bv/NESTER.C%2BV.English.zip",
+          "name": "English C+V",
+          "description": {
+            "en": "NESTER's C+V English voicebank."
           }
         }
       ],
