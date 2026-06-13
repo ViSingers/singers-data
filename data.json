@@ -128,7 +128,7 @@
         }
       },
       "creatorId": 193106123,
-      "updatedAt": "2026-06-12T23:58:08.000Z",
+      "updatedAt": "2026-06-13T00:09:51.000Z",
       "createdAt": "2026-06-12T18:11:15Z",
       "stars": 0,
       "voicebanks": [
@@ -138,10 +138,9 @@
             "ja"
           ],
           "sampleUrls": [
-            "utau/sampleACT1CV.wav",
-            "utau/sampleACT2CV.wav"
+            "av_1.0/sample.wav"
           ],
-          "url": "utau/Chihiro.Momonai.ACT1CV.zip",
+          "url": "av_1.0/Chihiro.Momonai.ACT1CV.zip",
           "name": "Chihiro Momonai",
           "description": {
             "en": "Chihiro Momonai"
@@ -149,6 +148,9 @@
         }
       ],
       "tags": [
+        {
+          "name": "jp"
+        },
         {
           "name": "masculine-voice"
         }
@@ -1507,6 +1509,9 @@
     },
     {
       "name": "humanoid"
+    },
+    {
+      "name": "jp"
     }
   ],
   "voicebankTypes": [
