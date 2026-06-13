@@ -74,6 +74,11 @@
       "id": 92231866,
       "login": "Alejo5205",
       "name": "Alejo520"
+    },
+    {
+      "id": 193106123,
+      "login": "charliedidit",
+      "name": "charliedidit"
     }
   ],
   "groups": [
@@ -102,6 +107,56 @@
     }
   ],
   "singers": [
+    {
+      "id": 1267634040,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Chihiro-Momonai",
+      "repoUrl": "charliedidit/chihiro-momonai",
+      "declaredGroupUrls": [],
+      "name": "Chihiro Momonai",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Has an unfinished VCV voicebank and has 2 CV voicebanks. No official artwork yet.",
+          "generalInfo": [
+            "Gender: Male",
+            "Height: 165m",
+            "Weight: 11037g",
+            "Age: 15 (but it can be any age you want)"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 193106123,
+      "updatedAt": "2026-06-12T23:58:08.000Z",
+      "createdAt": "2026-06-12T18:11:15Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "utau/sampleACT1CV.wav",
+            "utau/sampleACT2CV.wav"
+          ],
+          "url": "utau/Chihiro.Momonai.ACT1CV.zip",
+          "name": "Chihiro Momonai",
+          "description": {
+            "en": "Chihiro Momonai"
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "masculine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
     {
       "id": 1244016145,
       "avatarUrl": "main/image.jpg",
