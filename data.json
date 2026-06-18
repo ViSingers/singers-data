@@ -140,7 +140,7 @@
         }
       },
       "creatorId": 292964078,
-      "updatedAt": "2026-06-18T09:47:37.000Z",
+      "updatedAt": "2026-06-18T13:18:39.000Z",
       "createdAt": "2026-06-18T08:35:28Z",
       "stars": 0,
       "voicebanks": [
@@ -151,9 +151,9 @@
           ],
           "sampleUrls": [],
           "url": "ou_v1/Otomachi.Una.AI.CVVC.zip",
-          "name": "OU Multipitch CVVC Voicebank",
+          "name": "Multipitch CVVC Voicebank",
           "description": {
-            "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una SVS1 library. The voicebank features six (6) voicecolors (Boyish,Cute,Downer,Falsetto,Power,Whisper) and five (5) pitches (A#4,C4,D3,F4,G3)"
+            "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una SVS1 library. The voicebank features six (6) voicecolors (Boyish,Cute,Downer,Falsetto,Power,Whisper) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
           }
         }
       ],
