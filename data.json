@@ -113,6 +113,43 @@
   ],
   "singers": [
     {
+      "id": 1273134011,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Otomachi-Una-AI",
+      "repoUrl": "toodedicated/otomachi-una-ai",
+      "declaredGroupUrls": [
+        "toodedicated/kagaminekagamineports"
+      ],
+      "name": "Otomachi Una AI",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Otomachi Una (音街ウナ) is a Japanese vocal developed by AH-Software Co. Ltd. and distributed by Internet Co., Ltd. in collaboration with MTK Inc. and released as an AI voice database for Synthesizer V Studio in November 2024. She received an update for Synthesizer V Studio 2[1] in September 2025.",
+          "generalInfo": [
+            "Gender: Female",
+            "Age: 11",
+            "Height: 148.5 cm (with hat)"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution of Voicebank Allowed: No",
+            "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
+            "Crediting Required: Yes (Credit \"Evernight\" as the conversion author)"
+          ]
+        }
+      },
+      "creatorId": 292964078,
+      "updatedAt": "2026-06-18T09:23:54.000Z",
+      "createdAt": "2026-06-18T08:35:28Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
       "id": 863240633,
       "avatarUrl": "main/image.png",
       "repositoryName": "Awata_Weak",
