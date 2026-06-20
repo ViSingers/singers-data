@@ -96,13 +96,19 @@
         "en": "Accessible Ports for You"
       },
       "createdAt": "2026-06-17T09:28:40Z",
-      "updatedAt": "2026-06-20T03:48:14.000Z",
+      "updatedAt": "2026-06-20T09:30:34.000Z",
       "stars": 0,
       "memberUrls": [
         "toodedicated/otomachi-una-ai",
+        "toodedicated/otomachi-una-v6",
         "toodedicated/kagamine-twins"
       ],
       "participants": [
+        {
+          "id": 1275064442,
+          "name": "Otomachi Una AI (VOCALOID6)",
+          "repositoryName": "Otomachi-Una-V6"
+        },
         {
           "id": 1274914138,
           "name": "The Kagamine Twins (V4X)",
@@ -168,16 +174,35 @@
         }
       },
       "creatorId": 292964078,
-      "updatedAt": "2026-06-20T08:41:24.000Z",
+      "updatedAt": "2026-06-20T09:29:20.000Z",
       "createdAt": "2026-06-20T07:50:30Z",
       "stars": 0,
-      "voicebanks": [],
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [],
+          "url": "una_v1/Otomachi.Una.V6.CVVC.zip",
+          "name": "Multipitch CVVC Voicebank",
+          "description": {
+            "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una VOCALOID6 library. It features two (2) voicecolors (Sugar, Spicy) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+          }
+        }
+      ],
       "tags": [],
       "videoUrls": [],
       "imageUrls": [
         "main/gallery/1.png"
       ],
-      "groups": []
+      "groups": [
+        {
+          "id": 1272092398,
+          "name": "KagamineKagaminePorts",
+          "repositoryName": "KagamineKagaminePorts"
+        }
+      ]
     },
     {
       "id": 1274914138,
