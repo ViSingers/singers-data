@@ -141,6 +141,45 @@
   ],
   "singers": [
     {
+      "id": 1275064442,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Otomachi-Una-V6",
+      "repoUrl": "toodedicated/otomachi-una-v6",
+      "declaredGroupUrls": [
+        "toodedicated/kagaminekagamineports"
+      ],
+      "name": "Otomachi Una AI (VOCALOID6)",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Otomachi Una (音街ウナ) is a Japanese VOCALOID developed by Internet Co., Ltd. in collaboration with MTK Inc. and was released in July 2016 for the VOCALOID4 engine. A speech bank was also released for Talk Ex; a VOICEROID2 version of such talk bank was released in December 2020,[2][3] and a new version for A.I.VOICE2[4] is expected to release in February 2025.[5] In July 2021, she also had a voicebank release in the Voidol engine.\nUna was updated to the VOCALOID6 with AI voicebanks in June 2023.[6] A new talk voice database for VOICEPEAK was released in September 2023,[7] an AI voice database version for Synthesizer V Studio was released in November 2024,[8] and an update for the latter to Synthesizer V Studio 2 released in September 2025,[9] all three developed by AH-Software Co. Ltd..\nShe is voiced by the Japanese voice actress, Aimi Tanaka (田中あいみ; Tanaka Aimi).",
+          "generalInfo": [
+            "Gender: Female",
+            "Age: 11",
+            "Height: 148.5 cm (with hat)"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution of Voicebank Allowed: No",
+            "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
+            "Crediting Required: Yes (Credit \"Evernight\")"
+          ]
+        }
+      },
+      "creatorId": 292964078,
+      "updatedAt": "2026-06-20T08:41:24.000Z",
+      "createdAt": "2026-06-20T07:50:30Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [],
+      "videoUrls": [],
+      "imageUrls": [
+        "main/gallery/1.png"
+      ],
+      "groups": []
+    },
+    {
       "id": 1274914138,
       "avatarUrl": "main/image.png",
       "repositoryName": "Kagamine-Twins",
