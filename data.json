@@ -169,7 +169,7 @@
         }
       },
       "creatorId": 292964078,
-      "updatedAt": "2026-06-20T05:13:31.000Z",
+      "updatedAt": "2026-06-20T07:37:33.000Z",
       "createdAt": "2026-06-20T03:09:23Z",
       "stars": 0,
       "voicebanks": [
@@ -183,6 +183,18 @@
           "name": "Kagamine Rin (Multipitch CVVC Voicebank)",
           "description": {
             "en": "This is a CVVC voicebank based on vocal renders from the Kagamine Rin VOCALOID4 library. The voicebank features three (3) voicecolors (Power, Sweet, Warm) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [],
+          "url": "len_v1/Kagamine.Len.V4X.CVVC.zip",
+          "name": "Kagamine Len (Multipitch CVVC Voicebank)",
+          "description": {
+            "en": "This is a CVVC voicebank based on vocal renders from the Kagamine Rin VOCALOID4 library. The voicebank features three (3) voicecolors (Power, Serious, Cold) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
           }
         }
       ],
