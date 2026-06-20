@@ -104,14 +104,14 @@
       ],
       "participants": [
         {
-          "id": 1274914138,
-          "name": "Kagamine Rin & Len",
-          "repositoryName": "Kagamine-Twins"
-        },
-        {
           "id": 1273134011,
           "name": "Otomachi Una",
           "repositoryName": "Otomachi-Una"
+        },
+        {
+          "id": 1274914138,
+          "name": "Kagamine Rin & Len",
+          "repositoryName": "Kagamine-Twins"
         }
       ]
     },
@@ -140,6 +140,81 @@
     }
   ],
   "singers": [
+    {
+      "id": 1273134011,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Otomachi-Una",
+      "repoUrl": "toodedicated/otomachi-una",
+      "declaredGroupUrls": [
+        "toodedicated/kagaminekagamineports"
+      ],
+      "name": "Otomachi Una",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Otomachi Una (音街ウナ) is a Japanese VOCALOID developed by Internet Co., Ltd. in collaboration with MTK Inc. and was released in July 2016 for the VOCALOID4 engine. A speech bank was also released for Talk Ex; a VOICEROID2 version of such talk bank was released in December 2020,[2][3] and a new version for A.I.VOICE2[4] is expected to release in February 2025.[5] In July 2021, she also had a voicebank release in the Voidol engine. Una was updated to the VOCALOID6 with AI voicebanks in June 2023.[6] A new talk voice database for VOICEPEAK was released in September 2023,[7] an AI voice database version for Synthesizer V Studio was released in November 2024,[8] and an update for the latter to Synthesizer V Studio 2 released in September 2025,[9] all three developed by AH-Software Co. Ltd.. She is voiced by the Japanese voice actress, Aimi Tanaka (田中あいみ; Tanaka Aimi).",
+          "generalInfo": [
+            "Gender: Female",
+            "Age: 11",
+            "Height: 148.5 cm (with hat)"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution of Voicebank Allowed: No",
+            "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
+            "Crediting Required: Yes (Credit \"Evernight\")"
+          ]
+        }
+      },
+      "creatorId": 292964078,
+      "updatedAt": "2026-06-20T11:32:53.000Z",
+      "createdAt": "2026-06-18T08:35:28Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [],
+          "url": "unasvs1_v1/Otomachi.Una.AI.CVVC.zip",
+          "name": "Otomachi Una SVS1",
+          "description": {
+            "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una SVS1 library. The voicebank features six (6) voicecolors (Boyish, Cute, Downer, Falsetto, Power, Whisper) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [],
+          "url": "unav6_v1/Otomachi.Una.V6.CVVC.zip",
+          "name": "Otomachi Una V6",
+          "description": {
+            "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una VOCALOID6 library. The voicebank features two (2) voicecolors (Sugar, Spicy) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [
+        "main/gallery/1.png",
+        "main/gallery/2.png"
+      ],
+      "groups": [
+        {
+          "id": 1272092398,
+          "name": "KagamineKagaminePorts",
+          "repositoryName": "KagamineKagaminePorts"
+        }
+      ]
+    },
     {
       "id": 1274914138,
       "avatarUrl": "main/image.png",
@@ -209,56 +284,6 @@
       "videoUrls": [],
       "imageUrls": [
         "main/gallery/1.png"
-      ],
-      "groups": [
-        {
-          "id": 1272092398,
-          "name": "KagamineKagaminePorts",
-          "repositoryName": "KagamineKagaminePorts"
-        }
-      ]
-    },
-    {
-      "id": 1273134011,
-      "avatarUrl": "main/image.png",
-      "repositoryName": "Otomachi-Una",
-      "repoUrl": "toodedicated/otomachi-una",
-      "declaredGroupUrls": [
-        "toodedicated/kagaminekagamineports"
-      ],
-      "name": "Otomachi Una",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "Otomachi Una (音街ウナ) is a Japanese VOCALOID developed by Internet Co., Ltd. in collaboration with MTK Inc. and was released in July 2016 for the VOCALOID4 engine. A speech bank was also released for Talk Ex; a VOICEROID2 version of such talk bank was released in December 2020,[2][3] and a new version for A.I.VOICE2[4] is expected to release in February 2025.[5] In July 2021, she also had a voicebank release in the Voidol engine. Una was updated to the VOCALOID6 with AI voicebanks in June 2023.[6] A new talk voice database for VOICEPEAK was released in September 2023,[7] an AI voice database version for Synthesizer V Studio was released in November 2024,[8] and an update for the latter to Synthesizer V Studio 2 released in September 2025,[9] all three developed by AH-Software Co. Ltd.. She is voiced by the Japanese voice actress, Aimi Tanaka (田中あいみ; Tanaka Aimi).",
-          "generalInfo": [
-            "Gender: Female",
-            "Age: 11",
-            "Height: 148.5 cm (with hat)"
-          ],
-          "termsOfUse": [
-            "Commercial Use of Voicebank Allowed: No",
-            "Commercial Use of Character Allowed: No",
-            "Redistribution of Voicebank Allowed: No",
-            "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
-            "Crediting Required: Yes (Credit \"Evernight\")"
-          ]
-        }
-      },
-      "creatorId": 292964078,
-      "updatedAt": "2026-06-20T10:53:42.000Z",
-      "createdAt": "2026-06-18T08:35:28Z",
-      "stars": 0,
-      "voicebanks": [],
-      "tags": [
-        {
-          "name": "feminine-voice"
-        }
-      ],
-      "videoUrls": [],
-      "imageUrls": [
-        "main/gallery/1.png",
-        "main/gallery/2.png"
       ],
       "groups": [
         {
