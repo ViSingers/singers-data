@@ -96,12 +96,18 @@
         "en": "Accessible Ports for You"
       },
       "createdAt": "2026-06-17T09:28:40Z",
-      "updatedAt": "2026-06-18T14:45:28.000Z",
+      "updatedAt": "2026-06-20T03:48:14.000Z",
       "stars": 0,
       "memberUrls": [
-        "toodedicated/otomachi-una-ai"
+        "toodedicated/otomachi-una-ai",
+        "toodedicated/kagamine-twins"
       ],
       "participants": [
+        {
+          "id": 1274914138,
+          "name": "The Kagamine Twins (V4X)",
+          "repositoryName": "Kagamine-Twins"
+        },
         {
           "id": 1273134011,
           "name": "Otomachi Una AI (SVS1)",
@@ -134,6 +140,87 @@
     }
   ],
   "singers": [
+    {
+      "id": 1274914138,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "Kagamine-Twins",
+      "repoUrl": "toodedicated/kagamine-twins",
+      "declaredGroupUrls": [
+        "toodedicated/kagaminekagamineports"
+      ],
+      "name": "The Kagamine Twins (V4X)",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Kagamine Rin & Len (鏡音リン・レン), codenamed CV02, are Japanese vocals developed and distributed by Crypton Future Media, Inc., and were initially released in December 2007 for the VOCALOID2 engine. They are the second set of vocals for Crypton's Character Vocal Series and are both Character Voice VOCALOIDs. There have since been numerous installments such as additional voice banks dubbed 'Append', an update to the VOCALOID4 engine, and an English vocal. On August 30 2024, a refined and retuned edition of Kagamine Rin & Len's original VOCALOID4 (V4X) voicebanks, titled Kagamine Rin SP and Kagamine Len SP respectively, were released for the PIAPRO CHARACTERS SUPER PACK, a set of Japanese voicebanks developed for the Piapro Studio for V4X and VOCALOID4 engines. This release was noted to improve Rin & Len's overall balance of tone and pronunciation. Their voices are provided by the Japanese voice actress, stage actress, and singer Asami Shimoda (下田麻美 Shimoda Asami).",
+          "generalInfo": [
+            "Gender: Female (Rin), Male (Len)",
+            "Age: 14",
+            "Height: 152 cm (Rin), 156 cm (Len)",
+            "Weight: 43 kg (Rin), 47 kg (Len)"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution of Voicebank Allowed: No",
+            "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
+            "Crediting Required: Yes (Credit \"Evernight\")"
+          ]
+        },
+        "ru": {
+          "description": "Хороший пример: [Awata Weak](https://github.com/hhskt/Awata_Weak)\nКакое-то описание на русском",
+          "generalInfo": [
+            "Пол: Тест",
+            "Рост: 111м",
+            "Вес: 222г",
+            "Возраст: 33"
+          ],
+          "termsOfUse": [
+            "Контент 18+: Хз",
+            "Коммерческое использование войсбанка: Разрешено",
+            "Коммерческое использование персонажа: Требуется разрешение",
+            "Применяются ли эти условия к производным персонажам/голосам: Да"
+          ]
+        }
+      },
+      "creatorId": 292964078,
+      "updatedAt": "2026-06-20T03:46:57.000Z",
+      "createdAt": "2026-06-20T03:09:23Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [],
+          "url": "rin_v1/Kagamine.Rin.V4X.CVVC.zip",
+          "name": "Kagamine Rin (Multipitch CVVC Voicebank)",
+          "description": {
+            "en": "This is a CVVC voicebank based on vocal renders from the Kagamine Rin library. The voicebank features three (3) voicecolors (Power, Sweet, Warm) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "masculine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [
+        "main/gallery/1.png"
+      ],
+      "groups": [
+        {
+          "id": 1272092398,
+          "name": "KagamineKagaminePorts",
+          "repositoryName": "KagamineKagaminePorts"
+        }
+      ]
+    },
     {
       "id": 1273134011,
       "avatarUrl": "main/image.png",
