@@ -166,25 +166,10 @@
             "Alteration of Voicebank/Oto.ini Allowed: Yes (for personal use)",
             "Crediting Required: Yes (Credit \"Evernight\")"
           ]
-        },
-        "ru": {
-          "description": "Хороший пример: [Awata Weak](https://github.com/hhskt/Awata_Weak)\nКакое-то описание на русском",
-          "generalInfo": [
-            "Пол: Тест",
-            "Рост: 111м",
-            "Вес: 222г",
-            "Возраст: 33"
-          ],
-          "termsOfUse": [
-            "Контент 18+: Хз",
-            "Коммерческое использование войсбанка: Разрешено",
-            "Коммерческое использование персонажа: Требуется разрешение",
-            "Применяются ли эти условия к производным персонажам/голосам: Да"
-          ]
         }
       },
       "creatorId": 292964078,
-      "updatedAt": "2026-06-20T03:46:57.000Z",
+      "updatedAt": "2026-06-20T05:10:00.000Z",
       "createdAt": "2026-06-20T03:09:23Z",
       "stars": 0,
       "voicebanks": [
@@ -197,7 +182,7 @@
           "url": "rin_v1/Kagamine.Rin.V4X.CVVC.zip",
           "name": "Kagamine Rin (Multipitch CVVC Voicebank)",
           "description": {
-            "en": "This is a CVVC voicebank based on vocal renders from the Kagamine Rin library. The voicebank features three (3) voicecolors (Power, Sweet, Warm) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+            "en": "This is a CVVC voicebank based on vocal renders from the Kagamine Rin VOCALOID4 library. The voicebank features three (3) voicecolors (Power, Sweet, Warm) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
           }
         }
       ],
