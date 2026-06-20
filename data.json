@@ -168,7 +168,7 @@
         }
       },
       "creatorId": 292964078,
-      "updatedAt": "2026-06-20T11:32:53.000Z",
+      "updatedAt": "2026-06-20T13:19:46.000Z",
       "createdAt": "2026-06-18T08:35:28Z",
       "stars": 0,
       "voicebanks": [
@@ -177,7 +177,15 @@
           "languages": [
             "ja"
           ],
-          "sampleUrls": [],
+          "sampleUrls": [
+            "unasvs1_v1/boyish.mp3",
+            "unasvs1_v1/cute.mp3",
+            "unasvs1_v1/downer.mp3",
+            "unasvs1_v1/falsetto.mp3",
+            "unasvs1_v1/original.mp3",
+            "unasvs1_v1/power.mp3",
+            "unasvs1_v1/whisper.mp3"
+          ],
           "url": "unasvs1_v1/Otomachi.Una.AI.CVVC.zip",
           "name": "Otomachi Una SVS1",
           "description": {
@@ -189,7 +197,10 @@
           "languages": [
             "ja"
           ],
-          "sampleUrls": [],
+          "sampleUrls": [
+            "unav6_v1/spicy.mp3",
+            "unav6_v1/sugar.mp3"
+          ],
           "url": "unav6_v1/Otomachi.Una.V6.CVVC.zip",
           "name": "Otomachi Una V6",
           "description": {
