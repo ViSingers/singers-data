@@ -168,7 +168,7 @@
         }
       },
       "creatorId": 292964078,
-      "updatedAt": "2026-06-21T14:20:51.000Z",
+      "updatedAt": "2026-06-21T14:47:32.000Z",
       "createdAt": "2026-06-18T08:35:28Z",
       "stars": 1,
       "voicebanks": [
@@ -205,6 +205,21 @@
           "name": "Otomachi Una V6",
           "description": {
             "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una VOCALOID6 library. The voicebank features two (2) voicecolors (Sugar, Spicy) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "unav4_v1/spicy.mp3",
+            "unav4_v1/sugar.mp3"
+          ],
+          "url": "unav4_v1/Otomachi.Una.V4.CVVC.zip",
+          "name": "Otomachi Una V4",
+          "description": {
+            "en": "This is a CVVC voicebank based on vocal renders from the Otomachi Una VOCALOID4 library. The voicebank features two (2) voicecolors (Sugar, Spicy) and five (5) pitches (A#4,C4,D3,F4,G3). Only works in OpenUtau."
           }
         }
       ],
