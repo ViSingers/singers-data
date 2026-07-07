@@ -84,6 +84,11 @@
       "id": 292964078,
       "login": "toodedicated",
       "name": "toodedicated"
+    },
+    {
+      "id": 263112576,
+      "login": "arihoppes727-web",
+      "name": "arihoppes727-web"
     }
   ],
   "groups": [
@@ -140,6 +145,40 @@
     }
   ],
   "singers": [
+    {
+      "id": 1291693221,
+      "avatarUrl": "main/Untitled1345_20260617234019.jpg",
+      "repositoryName": "Opal",
+      "repoUrl": "arihoppes727-web/opal",
+      "declaredGroupUrls": [],
+      "name": "Opal",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "uhhhhhhhhhhh",
+          "generalInfo": [
+            "Gender: Trans-fem",
+            "Height: 5ft 7in",
+            "Weight: heavy",
+            "Age: 29"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 263112576,
+      "updatedAt": "2026-07-07T03:17:49.000Z",
+      "createdAt": "2026-07-07T02:52:38Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
     {
       "id": 1273134011,
       "avatarUrl": "main/image.png",
