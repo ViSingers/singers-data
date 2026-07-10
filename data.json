@@ -151,66 +151,6 @@
   ],
   "singers": [
     {
-      "id": 1296886082,
-      "avatarUrl": "main/image.jpg",
-      "repositoryName": "kznaitest",
-      "repoUrl": "l20412/kznaitest",
-      "declaredGroupUrls": [],
-      "name": "Kizuna AI",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "Kizuna AI is a female Japanese Virtual YouTuber who debuted on 29 November 2016. A pioneer in the VTuber field, she is credited with coining the phrase \"Virtual Youtuber\" and is one of the most successful VTubers of all time, reaching over 3 million YouTube subscribers.",
-          "generalInfo": [
-            "Gender: Female",
-            "Height: 156cm",
-            "Weight: 46kg",
-            "Age: ???"
-          ],
-          "termsOfUse": [
-            "Commercial Use of Voicebank Allowed: No",
-            "Commercial Use of Character Allowed: No",
-            "Redistribution allowed: No",
-            "Crediting required: No"
-          ]
-        }
-      },
-      "creatorId": 101477446,
-      "updatedAt": "2026-07-10T21:13:15.000Z",
-      "createdAt": "2026-07-10T20:38:00Z",
-      "stars": 0,
-      "voicebanks": [
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "av_1.0/sample-kizunaai.wav"
-          ],
-          "url": "av_1.0/Kizuna.AI.v0.4.zip",
-          "name": "Kizuna AI UTAU v0.4",
-          "description": {
-            "en": ""
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "sus"
-        },
-        {
-          "name": "feminine-voice"
-        },
-        {
-          "name": "vtuber"
-        }
-      ],
-      "videoUrls": [],
-      "imageUrls": [],
-      "groups": []
-    },
-    {
       "id": 1291693221,
       "avatarUrl": "main/Untitled1345_20260617234019.jpg",
       "repositoryName": "Opal",
@@ -1787,6 +1727,66 @@
       "videoUrls": [
         "TfMiyqJBQeA"
       ],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
+      "id": 1296886082,
+      "avatarUrl": "main/image.jpg",
+      "repositoryName": "kznaitest",
+      "repoUrl": "l20412/kznaitest",
+      "declaredGroupUrls": [],
+      "name": "Kizuna AI",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Kizuna AI is a female Japanese Virtual YouTuber who debuted on 29 November 2016. A pioneer in the VTuber field, she is credited with coining the phrase \"Virtual Youtuber\" and is one of the most successful VTubers of all time, reaching over 3 million YouTube subscribers.",
+          "generalInfo": [
+            "Gender: Female",
+            "Height: 156cm",
+            "Weight: 46kg",
+            "Age: ???"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution allowed: No",
+            "Crediting required: No"
+          ]
+        }
+      },
+      "creatorId": 101477446,
+      "updatedAt": "2026-07-10T21:13:15.000Z",
+      "createdAt": "2026-07-10T20:38:00Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "av_1.0/sample-kizunaai.wav"
+          ],
+          "url": "av_1.0/Kizuna.AI.v0.4.zip",
+          "name": "Kizuna AI UTAU v0.4",
+          "description": {
+            "en": ""
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "sus"
+        },
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "vtuber"
+        }
+      ],
+      "videoUrls": [],
       "imageUrls": [],
       "groups": []
     },
