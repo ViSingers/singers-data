@@ -175,7 +175,7 @@
         }
       },
       "creatorId": 99069711,
-      "updatedAt": "2026-08-31T16:47:00.000Z",
+      "updatedAt": "2026-08-31T22:09:53.000Z",
       "createdAt": "2023-03-09T02:23:09Z",
       "stars": 1,
       "voicebanks": [
@@ -187,9 +187,15 @@
             "ko"
           ],
           "sampleUrls": [
-            "DS_v0.3FLT/demo_core_ja.mp3"
+            "DS_v0.4.28/demo_AURA_JA_kamone.mp3",
+            "DS_v0.4.28/demo_BELT_JA_aranami.mp3",
+            "DS_v0.4.28/demo_CORE_EN_suchgreatheights.mp3",
+            "DS_v0.4.28/demo_CORE_KO_zero.mp3",
+            "DS_v0.4.28/demo_DUSK_JA_DARE.mp3",
+            "DS_v0.4.28/demo_GLOW_ZH_haishinidexiaorongzuikeai.mp3",
+            "DS_v0.4.28/demo_MASK_JA_kessennotoki.mp3"
           ],
-          "url": "DS_v0.3FLT/Azure_Cobalt_0.3FLT.zip",
+          "url": "DS_v0.4.28/AC_beta_0.4.28.zip",
           "name": "Azure Cobalt Δ",
           "description": {
             "en": "Six vocal modes create a versatile model with a wide range. See specific release for details."
@@ -219,7 +225,7 @@
         }
       ],
       "videoUrls": [
-        "OVD4vuv8y_c",
+        "V0Dp74BdVv0",
         "5g9Zjj8rcLU",
         "w_V1nXRunXY"
       ],
