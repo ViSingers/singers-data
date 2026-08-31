@@ -151,6 +151,82 @@
   ],
   "singers": [
     {
+      "id": 611531368,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "azurecobaltsynth",
+      "repoUrl": "agentasteriski/azurecobaltsynth",
+      "declaredGroupUrls": [],
+      "name": "Azure Cobalt",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "A bright, feminine-to-androgynous alto voice with the range to excel in a variety of styles.",
+          "generalInfo": [
+            "Gender: female",
+            "Height: 165cm",
+            "Age: ~20s"
+          ],
+          "termsOfUse": [
+            "R-18 Content Allowed: No explicit sexual content(General/suggestive allowed)",
+            "Commercial Use of Voicebank Allowed: Varies by release",
+            "Commercial Use of Character Allowed: Permission Required",
+            "Do these terms apply to derivative characters/voices: Yes"
+          ]
+        }
+      },
+      "creatorId": 99069711,
+      "updatedAt": "2026-08-31T16:35:00.000Z",
+      "createdAt": "2023-03-09T02:23:09Z",
+      "stars": 1,
+      "voicebanks": [
+        {
+          "type": "diffsinger",
+          "languages": [
+            "en",
+            "ja",
+            "ko"
+          ],
+          "sampleUrls": [
+            "DS_v0.3FLT/demo_core_ja.mp3"
+          ],
+          "url": "DS_v0.3FLT/Azure_Cobalt_0.3FLT.zip",
+          "name": "Azure Cobalt Δ",
+          "description": {
+            "en": "Six vocal modes create a versatile model with a wide range. See specific release for details."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "UTAU_v4.0.1/demo.mp3"
+          ],
+          "url": "UTAU_v4.0.1/Azure.Cobalt.-10th-.zip",
+          "name": "UTAU Azure Cobalt",
+          "description": {
+            "en": "10th Anniversary Edition: 7-mora VCV in C4 and F4."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "humanoid"
+        }
+      ],
+      "videoUrls": [
+        "OVD4vuv8y_c",
+        "5g9Zjj8rcLU",
+        "w_V1nXRunXY"
+      ],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
       "id": 1296886082,
       "avatarUrl": "main/image.jpg",
       "repositoryName": "kznaitest",
@@ -1560,83 +1636,6 @@
         "main/gallery/AI Talk.png",
         "main/gallery/standing.png"
       ],
-      "groups": []
-    },
-    {
-      "id": 611531368,
-      "avatarUrl": "main/image.png",
-      "repositoryName": "azurecobaltsynth",
-      "repoUrl": "agentasteriski/azurecobaltsynth",
-      "declaredGroupUrls": [],
-      "name": "Azure Cobalt",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "A bright, feminine-to-androgynous alto voice with the range to excel in a variety of styles.",
-          "generalInfo": [
-            "Gender: female",
-            "Height: 165cm",
-            "Age: ~20s"
-          ],
-          "termsOfUse": [
-            "R-18 Content Allowed: No explicit sexual content(General/suggestive allowed)",
-            "Commercial Use of Voicebank Allowed: Varies by release",
-            "Commercial Use of Character Allowed: Permission Required",
-            "Do these terms apply to derivative characters/voices: Yes"
-          ]
-        }
-      },
-      "creatorId": 99069711,
-      "updatedAt": "2026-08-31T12:47:41.000Z",
-      "createdAt": "2023-03-09T02:23:09Z",
-      "stars": 1,
-      "voicebanks": [
-        {
-          "type": "diffsinger",
-          "languages": [
-            "en",
-            "es",
-            "fr",
-            "ja"
-          ],
-          "sampleUrls": [
-            "DS_v0.3FLT/demo_core_ja.mp3"
-          ],
-          "url": "DS_v0.3FLT/Azure_Cobalt_0.3FLT.zip",
-          "name": "Azure Cobalt Δ",
-          "description": {
-            "en": "Six vocal modes create a versatile model with a wide range. See specific release for details."
-          }
-        },
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "UTAU_v4.0.1/demo.mp3"
-          ],
-          "url": "UTAU_v4.0.1/Azure.Cobalt.-10th-.zip",
-          "name": "UTAU Azure Cobalt",
-          "description": {
-            "en": "10th Anniversary Edition: 7-mora VCV in C4 and F4."
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "feminine-voice"
-        },
-        {
-          "name": "humanoid"
-        }
-      ],
-      "videoUrls": [
-        "OVD4vuv8y_c",
-        "5g9Zjj8rcLU",
-        "w_V1nXRunXY"
-      ],
-      "imageUrls": [],
       "groups": []
     },
     {
