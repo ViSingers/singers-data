@@ -162,7 +162,7 @@
       "siteUrl": "https://hhs-kt.ru/awata-weak/",
       "details": {
         "en": {
-          "description": "A free virtual singer with a youthful feminine voice, compatible with multiple vocal engines and adaptable to any software.\nAwata Weak is a robot created to serve the user, primarily through singing. It has no will, desires, or ambitions of its own.",
+          "description": "Awata Weak is a robot created in the image of a young girl. She is a virtual singer with a soft and feminine voice.",
           "generalInfo": [
             "Gender: Female",
             "Species: Robot",
@@ -174,7 +174,7 @@
           ]
         },
         "ru": {
-          "description": "Виртуальная певица, совместимая с различными вокальными синтезаторами. Она также доступна для конвертации и дальнейшего использования с другим ПО, войсбанки для которого не представлены автором.\nАвата Вик — робот, созданный для обслуживания пользователя, в основном через пение. У неё нет своей воли, желаний или амбиций.",
+          "description": "Авата Вик — робот, созданный в облике юной девушки. Она является виртуальной певицей с мягким и женственным голосом.",
           "generalInfo": [
             "Пол: Женский",
             "Вид: Робот",
@@ -187,7 +187,7 @@
         }
       },
       "creatorId": 129613118,
-      "updatedAt": "2026-09-25T19:35:20.000Z",
+      "updatedAt": "2026-09-25T19:44:36.000Z",
       "createdAt": "2024-09-26T00:48:01Z",
       "stars": 6,
       "voicebanks": [
