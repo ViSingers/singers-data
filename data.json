@@ -542,7 +542,7 @@
         }
       },
       "creatorId": 129613118,
-      "updatedAt": "2026-06-14T07:24:10.000Z",
+      "updatedAt": "2026-09-25T18:56:59.000Z",
       "createdAt": "2024-09-26T00:48:01Z",
       "stars": 6,
       "voicebanks": [
@@ -557,12 +557,14 @@
             "zh"
           ],
           "sampleUrls": [
-            "diffsinger_v2.1/1_Original.mp3",
-            "diffsinger_v2.1/2_Soft.mp3",
-            "diffsinger_v2.1/3_Whisper.mp3",
-            "diffsinger_v2.1/4_Cute.mp3"
+            "diffsinger_v3.0/1_Original.mp3",
+            "diffsinger_v3.0/2_Soft.mp3",
+            "diffsinger_v3.0/3_Vivid.mp3",
+            "diffsinger_v3.0/4_Mature.mp3",
+            "diffsinger_v3.0/5_Dark.mp3",
+            "diffsinger_v3.0/6_Cute.mp3"
           ],
-          "url": "diffsinger_v2.1/Awata_Weak_DS_v2.1.zip",
+          "url": "diffsinger_v3.0/Awata_Weak_DS_v3.zip",
           "name": "Diffsinger Voicebank",
           "description": {
             "en": "Diffsinger v2",
