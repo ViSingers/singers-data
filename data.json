@@ -94,6 +94,11 @@
       "id": 101477446,
       "login": "L20412",
       "name": "L20412"
+    },
+    {
+      "id": 275388827,
+      "login": "utf8ansi",
+      "name": "Jmhcorrect"
     }
   ],
   "groups": [
@@ -150,6 +155,34 @@
     }
   ],
   "singers": [
+    {
+      "id": 1431882823,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "chifuyu",
+      "repoUrl": "utf8ansi/chifuyu",
+      "declaredGroupUrls": [],
+      "name": "hanakuma chifuyu",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "chifuyu's RVC to diffsinger&utau!",
+          "generalInfo": [
+            "Gender: female",
+            "Height: 151m"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 275388827,
+      "updatedAt": "2026-10-24T06:45:52.000Z",
+      "createdAt": "2026-10-24T06:22:53Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
     {
       "id": 863240633,
       "avatarUrl": "main/image.png",
