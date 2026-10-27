@@ -452,148 +452,6 @@
       ]
     },
     {
-      "id": 611531368,
-      "avatarUrl": "main/image.png",
-      "repositoryName": "azurecobaltsynth",
-      "repoUrl": "agentasteriski/azurecobaltsynth",
-      "declaredGroupUrls": [],
-      "name": "Azure Cobalt",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "A bright, feminine-to-androgynous alto voice with the range to excel in a variety of styles.",
-          "generalInfo": [
-            "Gender: female",
-            "Height: 165cm",
-            "Age: ~20s"
-          ],
-          "termsOfUse": [
-            "R-18 Content Allowed: No explicit sexual content(General/suggestive allowed)",
-            "Commercial Use of Voicebank Allowed: Varies by release",
-            "Commercial Use of Character Allowed: Permission Required",
-            "Do these terms apply to derivative characters/voices: Yes"
-          ]
-        }
-      },
-      "creatorId": 99069711,
-      "updatedAt": "2026-08-31T22:11:50.000Z",
-      "createdAt": "2023-03-09T02:23:09Z",
-      "stars": 1,
-      "voicebanks": [
-        {
-          "type": "diffsinger",
-          "languages": [
-            "en",
-            "ja",
-            "ko"
-          ],
-          "sampleUrls": [
-            "DS_v0.4.28/demo_AURA_JA_kamone.mp3",
-            "DS_v0.4.28/demo_BELT_JA_aranami.mp3",
-            "DS_v0.4.28/demo_CORE_EN_suchgreatheights.mp3",
-            "DS_v0.4.28/demo_CORE_KO_zero.mp3",
-            "DS_v0.4.28/demo_DUSK_JA_DARE.mp3",
-            "DS_v0.4.28/demo_GLOW_ZH_haishinidexiaorongzuikeai.mp3",
-            "DS_v0.4.28/demo_MASK_JA_kessennotoki.mp3"
-          ],
-          "url": "DS_v0.4.28/AC_beta_0.4.28.zip",
-          "name": "Azure Cobalt Δ",
-          "description": {
-            "en": "Six vocal modes create a versatile model with a wide range. See specific release for details."
-          }
-        },
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "UTAU_v4.0.1/demo.mp3"
-          ],
-          "url": "UTAU_v4.0.1/Azure.Cobalt.-10th-.zip",
-          "name": "UTAU Azure Cobalt",
-          "description": {
-            "en": "10th Anniversary Edition: 7-mora VCV in C4 and F4."
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "feminine-voice"
-        },
-        {
-          "name": "humanoid"
-        }
-      ],
-      "videoUrls": [
-        "V0Dp74BdVv0",
-        "5g9Zjj8rcLU",
-        "w_V1nXRunXY"
-      ],
-      "imageUrls": [],
-      "groups": []
-    },
-    {
-      "id": 1296886082,
-      "avatarUrl": "main/image.jpg",
-      "repositoryName": "kznaitest",
-      "repoUrl": "l20412/kznaitest",
-      "declaredGroupUrls": [],
-      "name": "Kizuna AI",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "Kizuna AI is a female Japanese Virtual YouTuber who debuted on 29 November 2016. A pioneer in the VTuber field, she is credited with coining the phrase \"Virtual Youtuber\" and is one of the most successful VTubers of all time, reaching over 3 million YouTube subscribers.",
-          "generalInfo": [
-            "Gender: Female",
-            "Height: 156cm",
-            "Weight: 46kg",
-            "Age: ???"
-          ],
-          "termsOfUse": [
-            "Commercial Use of Voicebank Allowed: No",
-            "Commercial Use of Character Allowed: No",
-            "Redistribution allowed: No",
-            "Crediting required: No"
-          ]
-        }
-      },
-      "creatorId": 101477446,
-      "updatedAt": "2026-07-11T07:58:04.000Z",
-      "createdAt": "2026-07-10T20:38:00Z",
-      "stars": 0,
-      "voicebanks": [
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "av_1.0/sample-kizunaai.wav"
-          ],
-          "url": "av_1.0/Kizuna.AI.v0.4.zip",
-          "name": "Kizuna AI UTAU v0.4",
-          "description": {
-            "en": ""
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "sus"
-        },
-        {
-          "name": "feminine-voice"
-        },
-        {
-          "name": "vtuber"
-        }
-      ],
-      "videoUrls": [],
-      "imageUrls": [],
-      "groups": []
-    },
-    {
       "id": 1291693221,
       "avatarUrl": "main/Untitled1345_20260617234019.jpg",
       "repositoryName": "Opal",
@@ -852,95 +710,6 @@
         },
         {
           "name": "masculine-voice"
-        }
-      ],
-      "videoUrls": [],
-      "imageUrls": [],
-      "groups": []
-    },
-    {
-      "id": 1244016145,
-      "avatarUrl": "main/image.jpg",
-      "repositoryName": "NESTER",
-      "repoUrl": "mashiro39399/nester",
-      "declaredGroupUrls": [],
-      "name": "NESTER",
-      "siteUrl": "",
-      "details": {
-        "en": {
-          "description": "NESTER is a humanoid-like robot, a \"human\" version of the NES console by the Nintendo. She may be seen as cold and aggressive, but she just can't express her emotions properly. NESTER likes playing games, and especially hates corruptions and/or cartridge tilting.\nHer voicebank was created from the samples of NES, more specifically from the 2A03 sound chip of the console. Art by CelestaSi.",
-          "generalInfo": [
-            "Gender: Female/Robot",
-            "Height: 195cm/6'5\"",
-            "Weight: 89kg",
-            "Age: 40+ years"
-          ],
-          "termsOfUse": [
-            "Commercial Use of Voicebank Allowed: No.",
-            "Commercial Use of Character Allowed: No.",
-            "R-18 Content Allowed: Permission Required.",
-            "Use of the Design for AI Videos Allowed: No.",
-            "Use of Voicebank for Training AI Allowed: Permission Required."
-          ]
-        }
-      },
-      "creatorId": 188595288,
-      "updatedAt": "2026-06-08T17:00:03.000Z",
-      "createdAt": "2026-05-19T22:15:48Z",
-      "stars": 0,
-      "voicebanks": [
-        {
-          "type": "utau",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "nester-cv%2Bvv/CV_%2B_VV.mp3.mp3"
-          ],
-          "url": "nester-cv%2Bvv/NESTER.zip",
-          "name": "Japanese CV+VV",
-          "description": {
-            "en": "NESTER'S first voicebank. Made using Vocalizer & manual sample editing. Contains VV transitions for smoother sound. Reccomended to use in OpenUTAU with JA VCV&CVVC phonemizer. Monopitch, configured by Shirita_ii."
-          }
-        },
-        {
-          "type": "coeiroink",
-          "languages": [
-            "ja"
-          ],
-          "sampleUrls": [
-            "nester-mycoe/NESTER.WORD.OF.THE.DAY.mp3",
-            "nester-mycoe/nester1.mp3",
-            "nester-mycoe/nester2.mp3",
-            "nester-mycoe/nester3.mp3"
-          ],
-          "url": "nester-mycoe/NESTER.HANASU.zip",
-          "name": "MYCOEIROINK",
-          "description": {
-            "en": "NESTER'S first Text-To-Speech voicebank for the COEIROINK platform."
-          }
-        },
-        {
-          "type": "utau",
-          "languages": [
-            "en"
-          ],
-          "sampleUrls": [
-            "nester-c%2Bv/queen.of.venus.wav"
-          ],
-          "url": "nester-c%2Bv/NESTER.C%2BV.English.zip",
-          "name": "English C+V",
-          "description": {
-            "en": "NESTER's C+V English voicebank."
-          }
-        }
-      ],
-      "tags": [
-        {
-          "name": "artificial-voice"
-        },
-        {
-          "name": "feminine-voice"
         }
       ],
       "videoUrls": [],
@@ -1716,6 +1485,237 @@
         }
       ],
       "tags": [],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
+      "id": 611531368,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "azurecobaltsynth",
+      "repoUrl": "agentasteriski/azurecobaltsynth",
+      "declaredGroupUrls": [],
+      "name": "Azure Cobalt",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "A bright, feminine-to-androgynous alto voice with the range to excel in a variety of styles.",
+          "generalInfo": [
+            "Gender: female",
+            "Height: 165cm",
+            "Age: ~20s"
+          ],
+          "termsOfUse": [
+            "R-18 Content Allowed: No explicit sexual content(General/suggestive allowed)",
+            "Commercial Use of Voicebank Allowed: Varies by release",
+            "Commercial Use of Character Allowed: Permission Required",
+            "Do these terms apply to derivative characters/voices: Yes"
+          ]
+        }
+      },
+      "creatorId": 99069711,
+      "updatedAt": "2026-08-31T22:11:50.000Z",
+      "createdAt": "2023-03-09T02:23:09Z",
+      "stars": 1,
+      "voicebanks": [
+        {
+          "type": "diffsinger",
+          "languages": [
+            "en",
+            "ja",
+            "ko"
+          ],
+          "sampleUrls": [
+            "DS_v0.4.28/demo_AURA_JA_kamone.mp3",
+            "DS_v0.4.28/demo_BELT_JA_aranami.mp3",
+            "DS_v0.4.28/demo_CORE_EN_suchgreatheights.mp3",
+            "DS_v0.4.28/demo_CORE_KO_zero.mp3",
+            "DS_v0.4.28/demo_DUSK_JA_DARE.mp3",
+            "DS_v0.4.28/demo_GLOW_ZH_haishinidexiaorongzuikeai.mp3",
+            "DS_v0.4.28/demo_MASK_JA_kessennotoki.mp3"
+          ],
+          "url": "DS_v0.4.28/AC_beta_0.4.28.zip",
+          "name": "Azure Cobalt Δ",
+          "description": {
+            "en": "Six vocal modes create a versatile model with a wide range. See specific release for details."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "UTAU_v4.0.1/demo.mp3"
+          ],
+          "url": "UTAU_v4.0.1/Azure.Cobalt.-10th-.zip",
+          "name": "UTAU Azure Cobalt",
+          "description": {
+            "en": "10th Anniversary Edition: 7-mora VCV in C4 and F4."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "humanoid"
+        }
+      ],
+      "videoUrls": [
+        "V0Dp74BdVv0",
+        "5g9Zjj8rcLU",
+        "w_V1nXRunXY"
+      ],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
+      "id": 1296886082,
+      "avatarUrl": "main/image.jpg",
+      "repositoryName": "kznaitest",
+      "repoUrl": "l20412/kznaitest",
+      "declaredGroupUrls": [],
+      "name": "Kizuna AI",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "Kizuna AI is a female Japanese Virtual YouTuber who debuted on 29 November 2016. A pioneer in the VTuber field, she is credited with coining the phrase \"Virtual Youtuber\" and is one of the most successful VTubers of all time, reaching over 3 million YouTube subscribers.",
+          "generalInfo": [
+            "Gender: Female",
+            "Height: 156cm",
+            "Weight: 46kg",
+            "Age: ???"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No",
+            "Commercial Use of Character Allowed: No",
+            "Redistribution allowed: No",
+            "Crediting required: No"
+          ]
+        }
+      },
+      "creatorId": 101477446,
+      "updatedAt": "2026-07-11T07:58:04.000Z",
+      "createdAt": "2026-07-10T20:38:00Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "av_1.0/sample-kizunaai.wav"
+          ],
+          "url": "av_1.0/Kizuna.AI.v0.4.zip",
+          "name": "Kizuna AI UTAU v0.4",
+          "description": {
+            "en": ""
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "sus"
+        },
+        {
+          "name": "feminine-voice"
+        },
+        {
+          "name": "vtuber"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
+      "id": 1244016145,
+      "avatarUrl": "main/image.jpg",
+      "repositoryName": "NESTER",
+      "repoUrl": "mashiro39399/nester",
+      "declaredGroupUrls": [],
+      "name": "NESTER",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "NESTER is a humanoid-like robot, a \"human\" version of the NES console by the Nintendo. She may be seen as cold and aggressive, but she just can't express her emotions properly. NESTER likes playing games, and especially hates corruptions and/or cartridge tilting.\nHer voicebank was created from the samples of NES, more specifically from the 2A03 sound chip of the console. Art by CelestaSi.",
+          "generalInfo": [
+            "Gender: Female/Robot",
+            "Height: 195cm/6'5\"",
+            "Weight: 89kg",
+            "Age: 40+ years"
+          ],
+          "termsOfUse": [
+            "Commercial Use of Voicebank Allowed: No.",
+            "Commercial Use of Character Allowed: No.",
+            "R-18 Content Allowed: Permission Required.",
+            "Use of the Design for AI Videos Allowed: No.",
+            "Use of Voicebank for Training AI Allowed: Permission Required."
+          ]
+        }
+      },
+      "creatorId": 188595288,
+      "updatedAt": "2026-06-08T17:00:03.000Z",
+      "createdAt": "2026-05-19T22:15:48Z",
+      "stars": 0,
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "nester-cv%2Bvv/CV_%2B_VV.mp3.mp3"
+          ],
+          "url": "nester-cv%2Bvv/NESTER.zip",
+          "name": "Japanese CV+VV",
+          "description": {
+            "en": "NESTER'S first voicebank. Made using Vocalizer & manual sample editing. Contains VV transitions for smoother sound. Reccomended to use in OpenUTAU with JA VCV&CVVC phonemizer. Monopitch, configured by Shirita_ii."
+          }
+        },
+        {
+          "type": "coeiroink",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "nester-mycoe/NESTER.WORD.OF.THE.DAY.mp3",
+            "nester-mycoe/nester1.mp3",
+            "nester-mycoe/nester2.mp3",
+            "nester-mycoe/nester3.mp3"
+          ],
+          "url": "nester-mycoe/NESTER.HANASU.zip",
+          "name": "MYCOEIROINK",
+          "description": {
+            "en": "NESTER'S first Text-To-Speech voicebank for the COEIROINK platform."
+          }
+        },
+        {
+          "type": "utau",
+          "languages": [
+            "en"
+          ],
+          "sampleUrls": [
+            "nester-c%2Bv/queen.of.venus.wav"
+          ],
+          "url": "nester-c%2Bv/NESTER.C%2BV.English.zip",
+          "name": "English C+V",
+          "description": {
+            "en": "NESTER's C+V English voicebank."
+          }
+        }
+      ],
+      "tags": [
+        {
+          "name": "artificial-voice"
+        },
+        {
+          "name": "feminine-voice"
+        }
+      ],
       "videoUrls": [],
       "imageUrls": [],
       "groups": []
