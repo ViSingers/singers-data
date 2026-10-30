@@ -156,28 +156,42 @@
   ],
   "singers": [
     {
-      "id": 1431882823,
-      "avatarUrl": "main/image.png",
-      "repositoryName": "chifuyu",
-      "repoUrl": "utf8ansi/chifuyu",
+      "id": 1439804674,
+      "avatarUrl": "main/image.bmp",
+      "repositoryName": "YIXI_JA-VCV",
+      "repoUrl": "utf8ansi/yixi_ja-vcv",
       "declaredGroupUrls": [],
-      "name": "hanakuma chifuyu",
+      "name": "YIXI",
       "siteUrl": "",
       "details": {
         "en": {
-          "description": "chifuyu's RVC to diffsinger&utau!",
+          "description": "YIXI's utau voicebank",
           "generalInfo": [
-            "Gender: female",
-            "Height: 151m"
+            "Gender: female"
           ],
           "termsOfUse": []
         }
       },
       "creatorId": 275388827,
-      "updatedAt": "2026-10-24T06:45:52.000Z",
-      "createdAt": "2026-10-24T06:22:53Z",
+      "updatedAt": "2026-10-30T14:19:51.000Z",
+      "createdAt": "2026-10-30T14:02:06Z",
       "stars": 0,
-      "voicebanks": [],
+      "voicebanks": [
+        {
+          "type": "utau",
+          "languages": [
+            "ja"
+          ],
+          "sampleUrls": [
+            "yixi/YI.XI_JA.utau.VCV.wav"
+          ],
+          "url": "yixi/YIXI.JA_VCV.zip",
+          "name": "YIXI's UTAU voicebank",
+          "description": {
+            "en": "Test description 1"
+          }
+        }
+      ],
       "tags": [],
       "videoUrls": [],
       "imageUrls": [],
@@ -1824,6 +1838,34 @@
       "videoUrls": [
         "TfMiyqJBQeA"
       ],
+      "imageUrls": [],
+      "groups": []
+    },
+    {
+      "id": 1431882823,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "chifuyu",
+      "repoUrl": "utf8ansi/chifuyu",
+      "declaredGroupUrls": [],
+      "name": "hanakuma chifuyu",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "chifuyu's RVC to diffsinger&utau!",
+          "generalInfo": [
+            "Gender: female",
+            "Height: 151m"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 275388827,
+      "updatedAt": "2026-10-24T06:45:52.000Z",
+      "createdAt": "2026-10-24T06:22:53Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [],
+      "videoUrls": [],
       "imageUrls": [],
       "groups": []
     },
