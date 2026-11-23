@@ -162,7 +162,7 @@
   "singers": [
     {
       "id": 1469035676,
-      "avatarUrl": "main/image.png",
+      "avatarUrl": "main/momo.png",
       "repositoryName": "momone-momo",
       "repoUrl": "username20101/momone-momo",
       "declaredGroupUrls": [],
@@ -181,7 +181,7 @@
         }
       },
       "creatorId": 68459274,
-      "updatedAt": "2026-11-23T16:58:36.000Z",
+      "updatedAt": "2026-11-23T17:03:31.000Z",
       "createdAt": "2026-11-23T16:45:01Z",
       "stars": 0,
       "voicebanks": [],
