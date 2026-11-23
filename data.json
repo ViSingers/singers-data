@@ -99,6 +99,11 @@
       "id": 275388827,
       "login": "utf8ansi",
       "name": "Jmhcorrect"
+    },
+    {
+      "id": 68459274,
+      "login": "Username20101",
+      "name": "mari/peep"
     }
   ],
   "groups": [
@@ -155,6 +160,40 @@
     }
   ],
   "singers": [
+    {
+      "id": 1469035676,
+      "avatarUrl": "main/image.png",
+      "repositoryName": "momone-momo",
+      "repoUrl": "username20101/momone-momo",
+      "declaredGroupUrls": [],
+      "name": "MOMO VCV + CV",
+      "siteUrl": "",
+      "details": {
+        "en": {
+          "description": "i am archiving momo (the banks i have)",
+          "generalInfo": [
+            "gender: maybe",
+            "height: 6'1",
+            "weight: robot",
+            "age: 17"
+          ],
+          "termsOfUse": []
+        }
+      },
+      "creatorId": 68459274,
+      "updatedAt": "2026-11-23T16:58:36.000Z",
+      "createdAt": "2026-11-23T16:45:01Z",
+      "stars": 0,
+      "voicebanks": [],
+      "tags": [
+        {
+          "name": "feminine-voice"
+        }
+      ],
+      "videoUrls": [],
+      "imageUrls": [],
+      "groups": []
+    },
     {
       "id": 1439804674,
       "avatarUrl": "main/image.bmp",
